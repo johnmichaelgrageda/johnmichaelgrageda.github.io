@@ -1,4 +1,4 @@
-.carousel-inner .carousel-item{
+.carousel-inner {
     height: 500px;
 }
 .carousel-item img {
@@ -8,4 +8,8 @@
     top: 0;
     left: 0;
     min-height: 500px;
+}
+.navbar-brand img {
+    /*change logo to blend with background?*/
+    height: 60px;
 }

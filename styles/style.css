@@ -1,0 +1,11 @@
+.carousel-inner .carousel-item{
+    height: 500px;
+}
+.carousel-item img {
+    position: absolute;
+    /*prevent image from stretching*/
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}

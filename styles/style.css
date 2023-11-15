@@ -12,8 +12,7 @@
 .navbar-brand img {
     /*change logo to blend with background?*/
     height: 60px;
-<<<<<<< HEAD
-=======
+
 }
 /* body {
     min-height: 100vh;
@@ -23,12 +22,23 @@
     background: none;
     font-family: Arial, Helvetica, sans-serif
 } */
+.wrapper-class input[type="radio"] {
+    width: 15px;
+  }
+  .wrapper-class input[type="checkbox"] {
+    width: 15px;
+  }
+.wrapper-class label {
+    display: inline;
+    margin-left: 5px;
+    }
+
 form{
     width: 100%;
     max-width: 30rem;
 }
-label, input, textarea, button{
-    display: block;
+label, input, textarea, button {
+    /*display: block;*/
 }
 input, textarea, button {
     width: 100%;
@@ -56,6 +66,7 @@ textarea:focus {
 label {
     margin-bottom: 0.5rem;
     color: #84868f;
+    
 }
 textarea{
     min-height: 12.5rem;
@@ -76,13 +87,13 @@ textarea{
     background: #5c94d4;
 }
 .popup{
-    width: 400px;
+    width: 30%;
     background: #fff;
     border-radius: 6px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50, -50%) scale(0.1);
+    transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
     padding: 0 30px 30px;
     color: #333;
@@ -94,7 +105,7 @@ textarea{
     visibility: visible;
     text-align: center;
     top: 50%;
-    transform: translate(-50, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
 }
 .popup img{
     width: 100px;
@@ -120,10 +131,10 @@ textarea{
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
+
+
 .span-required{
     display: none;
-    font-size: 14px;
-    
+    font-size: 14px;    
     color: red;
->>>>>>> d9ea4c789636a5ff4d8109b1bd1d8723d0f928ee
 }

@@ -46,3 +46,37 @@ function emailValidate(){
         removeError(1);
     }
 }
+function validateRadio(){
+    var validate = false;
+    var y = document.myform.payment;
+
+    for (var i=0; i<y.length; i++){
+        if(y[i].checked){
+            validate = true;
+            break;
+        }
+    }
+    if (validate){
+        alert("succesful");
+    }else {
+        alert('Select the payment method')
+        return false;
+    }
+}
+function validateCheckbox(){
+    var validate = false;
+    var z = document.myform.yesno;
+
+    for (var i=0; i<z.length; i++){
+        if(z[i].checked){
+            validate = true;
+            break;
+        }
+    }
+    if (validate){
+        alert("succesful");
+    }else {
+        alert('Select the payment method')
+        return false;
+    }
+}

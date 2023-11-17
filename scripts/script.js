@@ -9,15 +9,14 @@ function closePopup(){
     setTimeout(closePopup, 10000);
 }
 
+
+
 const form  = document.getElementById('form');
 const field = document.querySelectorAll('.required');
 const span  = document.querySelectorAll('.span-required');
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
-form.addEventListener('submit', (event) => {
-    event.preventDefault;
-    openPopup();
-})
+
 
 function setError(index){
     field[index].style.border = "3px solid #e63636";
@@ -27,6 +26,7 @@ function removeError(index){
     field[index].style.border = '';
     span[index].style.display = 'none';
 }
+
 
 function nameValidate(){
     if(field[0].value.length < 5){
@@ -63,12 +63,13 @@ function validateRadio(){
         return false;
     }
 }
-function validateCheckbox(){
-    var validate = false;
-    var z = document.myform.yesno;
 
-    for (var i=0; i<z.length; i++){
-        if(z[i].checked){
+function valiCheck(){
+    var validate = false;
+    var y = document.myform.yesno;
+
+    for (var i=0; i<y.length; i++){
+        if(y[i].checked){
             validate = true;
             break;
         }
@@ -80,3 +81,8 @@ function validateCheckbox(){
         return false;
     }
 }
+const formm = document.getElementById('myForm')
+formm.addEventListener('submit', e => {
+    e.preventDefault()
+    console.log('Deu certo')
+})

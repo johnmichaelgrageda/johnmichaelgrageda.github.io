@@ -1,3 +1,4 @@
+/*John*/
 .carousel-inner {
     height: 500px;
 }
@@ -13,6 +14,13 @@
     /*change logo to blend with background?*/
     height: 60px;
 }
+
+#hiddenDiv { 
+    display: none;
+}
+
+/*John*/
+
 /* body {
     min-height: 100vh;
     display: grid;
@@ -21,6 +29,7 @@
     background: none;
     font-family: Arial, Helvetica, sans-serif
 } */
+/*claudmar*/
 form{
     width: 100%;
     max-width: 30rem;
@@ -124,3 +133,5 @@ textarea{
     
     color: red;
 }
+/*claudmar*/
+

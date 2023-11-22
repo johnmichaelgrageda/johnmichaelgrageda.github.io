@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJF Mechanics</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+</head>
+<body>
+<!--navbar-->
+<!--code snippet https://getbootstrap.com/docs/5.3/components/navbar/-->
+<header>
+  <nav class="navbar navbar-expand-sm bg-body-tertiary mb-3">
+    <div class="container-fluid">
+        <!--replace navbar text with logo?-->
+      <a class="navbar-brand" href="#"> <img src="../images/headerlogo.jpg"></a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about/about.html">About</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+            </a>
+            <ul class="dropdown-menu">
+            <!--add page paths below-->
+              <li><a class="dropdown-item" href="../brakes/brakes.html">Brakes</a></li>
+              <li><a class="dropdown-item" href="#">Clutch Replacement</a></li>
+              <li><a class="dropdown-item" href="../wheels/wheels.html">Wheel Alignment</a></li>
+              <li><a class="dropdown-item" href="../bookservices/bookservices.html">Book a Service</a></li>
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="../contact/contact.html">Contact Us</a>
+              </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+  
+<div class="container mb-3">
+    <div class="row mb-5">
+        <!--image is fluid, resizes depending on screen size-->
+        <!--columns stacks below large devices-->
+        <div class="col-lg-6 mb-3">
+            <!--https://www.vecteezy.com/photo/12812568-clutch-cover-installed-in-a-car-engine-->
+            <img src="../images/clutch.jpg" class="img-fluid" alt="clutch-image">
+        </div>
+        <div class="col-lg-6">
+            <!--https://donnellanauto.ie/car-repair-galway/#clutchesgalway-->
+            <!--contents extracted from above website, modified-->
+            <h4 class="text-center">Clutch Replacement</h4>
+            <p>
+                At CJF Mechanics we can help maintain and service your gearbox/clutch which could save you a lot of money in the long run.
+            </p>
+            <p>
+                A clutch replacement is a specialist repair that you don’t want to leave to just anyone. That’s why our team of technicians are highly trained in all manual, semi-automatic and automatic gearboxes, giving our clients the peace of mind that they are in safe hands.  
+            </p>
+            <p>
+                Are you having problems with your clutch? Have you noticed a grinding noise or burning smell when using the clutch? If so, contact our team today and let our technicians have a look. Catch the repair early and don’t run the risk of a complete replacement.
+            </p>
+            <!--call button, javascript -->
+            <!--https://stackoverflow.com/questions/17897213/how-to-call-a-phone-number-through-javascript-without-using-a-tag-->
+            <div class="mb-3">
+              <button class="call-button" onclick="window.open('tel: 0891234567', '_self')">Call us on 0891234567</button>
+            </div>
+            <!--book button, javascript, opens new window to bookservices page-->
+            <!--https://www.w3schools.com/jsref/met_win_open.asp-->
+            <div class="mb-3">
+              <button class="book-button" onclick="window.open('../bookservices/bookservices.html')">Book Online</button>
+            </div>
+        </div>
+    </div>
+  </div>
+      <!--rock paper scissors image link-->
+      <!--https://www.vecteezy.com/vector-art/13758208-rock-paper-scissors-banners-with-hand-gestures-->
+<div class="container text-center">
+  <div class="row">
+    <div class="col-xxl-6 col-md-6 mb-3">
+      <h1>add more content here</h1>
+    </div>
+    <div class="col-xxl-6 col-md-6 mb-3">
+      <h4 class="rpsGame">Mini Game - Click the image to start playing</h4>
+      <img id="rpsImg" src="../images/rps.jpg" class="img-fluid mb-1" onclick="show(hiddenDiv)" alt="Rock Paper Scissors Image">
+      <!--hidden div, shows only on click event-->
+      <div id="hiddenDiv">
+        <div>
+          <h3>Rock, Paper or Scissors?</h3>
+        </div>
+        <!--player chooses button options to play-->
+        <!--https://getbootstrap.com/docs/5.3/components/buttons/-->
+        <div class="playerChoice">
+          <button id="rock" class="btn btn-primary mb-1" >Rock</button>
+          <button id="paper" class="btn btn-primary mb-1" >Paper</button>
+          <button id="scissors" class="btn btn-primary mb-1" >Scissors</button>
+        </div>
+        <div class="result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="bg-dark text-center text-white mt-5">
+  <div class="container p-1">
+    <section class="mb-4">
+      <p>
+        CJF Mechanics - The only mechanics you'll need.
+      </p>
+        <!-- Copyright -->
+      <p> 
+        © 2023 Copyright CJF Mechanics
+      </p>
+    </section>
+  </div>
+</footer>
+<!-- Footer -->
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/rps.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

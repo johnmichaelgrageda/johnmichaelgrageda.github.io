@@ -15,6 +15,161 @@
     height: 60px;
 }
 
+
+    /*Brakes page*/
+    #bg {background-image:url(../images/Brake-Repair.jpg);
+    width: auto;
+    padding: 50px;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+    }
+    
+    .custom {
+        width: 150px !important;
+    }
+    .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px;
+        text-align: center;
+    }
+    .textBody{
+        font-family:  'Noto Sans', sans-serif;
+
+    }
+
+    .textBody h1{
+        font-size: 35px;
+    }
+     
+   
+   
+    .textBody h3{
+        font-size: 20px;
+        font-weight: bold;
+    }
+     
+    /* This class is defining the styling for the container element that holds each
+    testimonial in a testimonial grid. */
+    .testimonial-container {
+        background-color: #ffffff;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+     
+     
+    .testimonial-text {
+        margin-bottom: 20px;
+        font-style: italic;
+    }
+     
+    .testimonial-name {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333333;
+    }
+     
+    .testimonial-role {
+        font-size: 16px;
+        color: #666666;
+    }
+     
+    /* This media query in CSS that targets screens with a maximum width of 600 pixels. */
+    @media screen and (max-width: 600px) {
+        .testimonial-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /*Form*/
+
+    .quoteContainer{
+    height: 700px;
+    
+
+    }
+
+    .quoteContainer p{
+        background-color: #212529;
+        padding: 10%;
+        color: white;
+        margin-top: 10px;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    form{
+        width: 100%;
+        max-width: 30rem;
+        
+    }
+
+    label, input, textarea, button{
+        display: block;
+        
+    }
+    input, textarea, button {
+        width: 100%;
+        font: inherit;
+        padding: 1.30rem;
+        font-weight: 350;
+    }
+
+    input, textarea{
+        margin-bottom: 151px;
+        color: white;
+        background: white;
+        border: 0.125rem solid gray;
+        height: 20px;
+        transition: border-color 0.3s, box-shadow 0.3s; 
+        
+    }
+    input:hover,
+    input:focus,
+    textarea:hover,
+    textarea:focus {
+        outline: none;
+        border-color: #3277b3;
+        box-shadow: 0 0 0 0.2125rem #3e5479;
+    }
+    label {
+        margin-bottom: 0.5rem;
+        color: #84868f;
+    }
+    textarea{
+        min-height: 10rem;
+        resize: vertical;
+    }
+    .buttonSubmit {    
+        border: none;
+        color: white;
+        background-color: #666666;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+    .buttonSubmit:hover,
+    .buttonSubmit:focus {
+        outline: none;
+        background: #1c70d3;
+    }
+    #quote{
+      display: flex;  
+    }
+
+    #brakes-img{
+        max-width: auto;
+    }
+
 #hiddenDiv { 
     display: none;
 }
@@ -134,4 +289,5 @@ textarea{
     color: red;
 }
 /*claudmar*/
+
 

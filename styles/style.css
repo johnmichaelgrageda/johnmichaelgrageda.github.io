@@ -15,6 +15,35 @@
     height: 60px;
 }
 
+#hiddenDiv { 
+    display: none;
+}
+
+/*highlight call and book buttons on hover*/
+
+.call-button:hover, .book-button:hover,{
+    color: darkblue !important;
+    font-weight: bold;
+    background-color: darkorange;
+    border-color: red;
+    transform: scale(1.1);
+}   
+.btn-primary:hover{
+    color: darkblue !important;
+    background-color: darkorange !important;
+    border-color: red !important;
+    transform: scale(1.1);
+}
+
+.nav-link:hover{
+    color: darkblue !important;
+    font-weight: bold;
+    background-color: darkorange;
+    border-color: red;
+}
+
+
+/*John*/
 
     /*Brakes page*/
     #bg {background-image:url(../images/Brake-Repair.jpg);
@@ -170,11 +199,7 @@
         max-width: auto;
     }
 
-#hiddenDiv { 
-    display: none;
-}
 
-/*John*/
 
 /* body {
     min-height: 100vh;

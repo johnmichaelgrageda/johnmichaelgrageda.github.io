@@ -21,12 +21,12 @@
 
 /*highlight call and book buttons on hover*/
 
-.call-button:hover, .book-button:hover,{
+.call-button:hover, .book-button:hover{
     color: darkblue !important;
     font-weight: bold;
     background-color: darkorange;
     border-color: red;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }   
 .btn-primary:hover{
     color: darkblue !important;
@@ -35,10 +35,10 @@
     transform: scale(1.1);
 }
 
-.nav-link:hover{
+.nav-link:hover, .dropdown-item:hover{
     color: darkblue !important;
     font-weight: bold;
-    background-color: darkorange;
+    background-color: darkorange !important;
     border-color: red;
 }
 

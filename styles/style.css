@@ -19,6 +19,16 @@
     display: none;
 }
 
+.navbar, .site-footer {
+    background-color: rgb(22,53,77) !important;
+    border: none !important;
+    border-width: 0 !important;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
 /*highlight call and book buttons on hover*/
 
 .call-button:hover, .book-button:hover{

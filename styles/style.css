@@ -19,10 +19,8 @@
     display: none;
 }
 
-.navbar, .site-footer {
+.navbar, .site-footer, .car-service-checklist{
     background-color: rgb(22,53,77) !important;
-    border: none !important;
-    border-width: 0 !important;
 }
 
 .nav-link {

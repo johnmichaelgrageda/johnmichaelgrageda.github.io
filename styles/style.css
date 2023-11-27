@@ -13,10 +13,6 @@
 .navbar-brand img {
     /*change logo to blend with background?*/
     height: 60px;
-<<<<<<< HEAD
-
-=======
->>>>>>> b43c219b2c5dd38bb0f606c9e5e811c41b517952
 }
 
 #hiddenDiv { 
@@ -221,7 +217,6 @@
     background: none;
     font-family: Arial, Helvetica, sans-serif
 } */
-<<<<<<< HEAD
 
 .wrapper-class input[type="radio"] {
     width: 15px;
@@ -237,10 +232,6 @@
     }
 
 myForm{
-=======
-/*claudmar*/
-form{
->>>>>>> b43c219b2c5dd38bb0f606c9e5e811c41b517952
     width: 100%;
     max-width: 30rem;
 }
@@ -347,9 +338,4 @@ textarea{
     font-size: 14px;    
     color: red;
 }
-<<<<<<< HEAD
-=======
-/*claudmar*/
-
->>>>>>> b43c219b2c5dd38bb0f606c9e5e811c41b517952
 

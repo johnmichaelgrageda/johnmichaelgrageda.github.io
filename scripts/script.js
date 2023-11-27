@@ -6,17 +6,13 @@ function openPopup(){
 
 function closePopup(){
     popup.classList.remove("open-popup");
-    setTimeout(closePopup, 10000);
+    setTime
+    out(closePopup, 10000);
 }
-
-
-
 const form  = document.getElementById('form');
 const field = document.querySelectorAll('.required');
 const span  = document.querySelectorAll('.span-required');
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-
-
 
 function setError(index){
     field[index].style.border = "3px solid #e63636";
@@ -84,5 +80,5 @@ function valiCheck(){
 const formm = document.getElementById('myForm')
 formm.addEventListener('submit', e => {
     e.preventDefault()
-    console.log('Deu certo')
+    
 })

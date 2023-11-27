@@ -6,18 +6,13 @@ function openPopup(){
 
 function closePopup(){
     popup.classList.remove("open-popup");
-    setTimeout(closePopup, 10000);
+    setTime
+    out(closePopup, 10000);
 }
-
 const form  = document.getElementById('form');
 const field = document.querySelectorAll('.required');
 const span  = document.querySelectorAll('.span-required');
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-
-form.addEventListener('submit', (event) => {
-    event.preventDefault;
-    openPopup();
-})
 
 function setError(index){
     field[index].style.border = "3px solid #e63636";
@@ -27,6 +22,7 @@ function removeError(index){
     field[index].style.border = '';
     span[index].style.display = 'none';
 }
+
 
 function nameValidate(){
     if(field[0].value.length < 5){
@@ -46,3 +42,43 @@ function emailValidate(){
         removeError(1);
     }
 }
+function validateRadio(){
+    var validate = false;
+    var y = document.myform.payment;
+
+    for (var i=0; i<y.length; i++){
+        if(y[i].checked){
+            validate = true;
+            break;
+        }
+    }
+    if (validate){
+        alert("succesful");
+    }else {
+        alert('Select the payment method')
+        return false;
+    }
+}
+
+function valiCheck(){
+    var validate = false;
+    var y = document.myform.yesno;
+
+    for (var i=0; i<y.length; i++){
+        if(y[i].checked){
+            validate = true;
+            break;
+        }
+    }
+    if (validate){
+        alert("succesful");
+    }else {
+        alert('Select the payment method')
+        return false;
+    }
+}
+const formm = document.getElementById('myForm')
+formm.addEventListener('submit', e => {
+    e.preventDefault()
+    
+})

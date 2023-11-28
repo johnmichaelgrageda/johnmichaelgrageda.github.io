@@ -6,7 +6,6 @@
     <title>CJF Mechanics</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
 </head>
 <body>
 <!--navbar-->
@@ -59,29 +58,18 @@
 
     <!--https://getbootstrap.com/docs/5.0/components/list-group/-->
     <!--update below, add description of interim and full service, remove bullet list-->
+    <!--https://www.firststop.ie/our-services/car-servicing difference between full and interim service-->
     <div class="col-lg-6 mt-2">
       <h4>Full Car Service</h4>
-      <p>This includes everything included in an interim service plus</p>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">50+ Point Check</li>
-        <li class="list-group-item">Engine Oil change</li>
-        <li class="list-group-item">Engine Oil Filter change</li>
-        <li class="list-group-item">Coolant & Brake Fluid Top up</li>
-        <li class="list-group-item">Air Filter Change</li>
-        <li class="list-group-item">Battery & System Diagnostic</li>
-      </ul>
+      <p>A full car service is ideal for an annual maintenance programme for your car and recommended every 15,000 kilometres or 12 months – Whichever is sooner. 
+        Some manufacturers may recommend more frequent checks. 
+      </p>
     </div>
 
     <div class="col-lg-6 mt-2">
       <h4>Interim Car Service</h4>
-      <p>All our car services come with a check of you cars overall condition, NCT expiry, plus this interim service includes a</p>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">30+ Point Check</li>
-        <li class="list-group-item">Engine Oil change</li>
-        <li class="list-group-item">Engine Oil Filter change</li>
-        <li class="list-group-item">Complete check of your vehicle from instrument gauges, lights, spark plugs, brakes to operation levels of your transmission, handbrake, steering, suspension, and exhaust.
-        </li>
-      </ul>
+      <p>Interim Servicing is ideal for vehicles used for short, mainly urban journeys or for those who wish to service vehicles doing very high mileage more regularly. 
+        An interim service every 7,500 kilometres or 6 months helps keep your car safe and road worthy between full services.</p>
     </div>
   </div>
 
@@ -89,14 +77,14 @@
   <!--check list comparison of service types below-->
   <!--https://getbootstrap.com/docs/5.0/components/accordion/-->
   <div class="row mt-5">
-      <div class="col-4 car-service-checklist text-white">
+      <div class="col-6 car-service-checklist text-white">
         <h2>Car Service Checklist</h2>
       </div>
-      <div class="col-4 car-service-checklist text-white text-center border-start border-white">
+      <div class="col-3 car-service-checklist text-white text-center border-start border-white">
         <h2>Interim</h2>
         <p>6 months / 7500 kilometres</p>
       </div>
-      <div class="col-4 car-service-checklist text-white text-center border-start border-white">
+      <div class="col-3 car-service-checklist text-white text-center border-start border-white">
         <h2>Full</h2>
         <p>12 months / 15000 kilometres</p>
       </div>
@@ -113,7 +101,8 @@
             <!--added another div row to format checklist for horizontal comparison-->
             <div class="row">
               <!--make sure to add margin/padding in between columns-->
-              <div class="col-4">
+              <!--https://www.freecodecamp.org/news/checkmark-symbol-html-for-checkmark-unicode/#:~:text=The%20Unicode%20and%20HTML%20Characters%20for%20Checkmarks&text=Remove%20the%20U%2B%20and%20replace,it%20becomes%20%E2%9C%93%20. tick icon-->
+              <div class="col-6">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">Engine Oil</li>
                   <li class="list-group-item">Air Filter</li>
@@ -122,21 +111,21 @@
                   <li class="list-group-item">Brake Fluid</li>
                 </ul>
               </div>
-              <div class="col-4">
+              <div class="col-3">
                 <ul class="list-group list-group-flush">
                   <!--replace tick text with check image? or Yes/No, Included/Not included-->
-                  <li class="list-group-item text-center">Tick 1</li>
-                  <li class="list-group-item text-center">Tick 2</li>
-                  <li class="list-group-item text-center">Tick 3</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center">&#10004;</li>
                 </ul>
               </div>
-              <div class="col-4">
+              <div class="col-3">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item text-center">Tick 1</li>
-                  <li class="list-group-item text-center">Tick 2</li>
-                  <li class="list-group-item text-center">Tick 3</li>
-                  <li class="list-group-item text-center">Tick 4</li>
-                  <li class="list-group-item text-center">Tick 5</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center">&#10004;</li>
                 </ul>
               </div>
             </div>
@@ -154,30 +143,59 @@
           <div class="accordion-body">
             <div class="row">
               <!--make sure to add margin/padding in between columns-->
-              <div class="col-4">
+              <table class="table table-hover">
+                <tbody>
+                  <tr>
+                    <th scope="row">Fuel filter replacement (for diesel cars)</th>
+                    <td>&#10004;</td>
+                    <td>&#10004;</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Check radiator/cooling system for leaks and check condition of hoses</th>
+                    <td>&#10004;</td>
+                    <td>&#10004;</td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+
+
+
+              <div class="col-6">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Engine #</li>
-                  <li class="list-group-item">Engine #</li>
-                  <li class="list-group-item">Engine #</li>
-                  <li class="list-group-item">Engine #</li>
-                  <li class="list-group-item">Engine #</li>
+                  <li class="list-group-item">Fuel filter replacement (for diesel cars)</li>
+                  <li class="list-group-item">Check radiator/cooling system for leaks and check condition of hoses</li>
+                  <li class="list-group-item">Check for timing belt replacement interval & report if due according to mileage/age</li>
+                  <li class="list-group-item">Check for any visible signs of brake fluid leakage on front and rear back plates</li>
+                  <li class="list-group-item">Check Coolant / Radiator cap seals</li>
+                  <li class="list-group-item">Top up coolant as required</li>
+                  <li class="list-group-item">Check Battery security and condition</li>
+                  <li class="list-group-item">Test alternator charging rate</li>
+                  <li class="list-group-item">Check Spark Plugs and report if due for replacement (additional charge applies)</li>
                 </ul>
               </div>
-              <div class="col-4">
+              <div class="col-3">
                 <ul class="list-group list-group-flush">
                   <!--replace tick text with check image? or Yes/No, Included/Not included-->
-                  <li class="list-group-item text-center">Tick 1</li>
-                  <li class="list-group-item text-center">Tick 2</li>
-                  <li class="list-group-item text-center">Tick 3</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center"> No </li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center"></li>
                 </ul>
               </div>
-              <div class="col-4">
+              <div class="col-3">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item text-center">Tick 1</li>
-                  <li class="list-group-item text-center">Tick 2</li>
-                  <li class="list-group-item text-center">Tick 3</li>
-                  <li class="list-group-item text-center">Tick 4</li>
-                  <li class="list-group-item text-center">Tick 5</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center">&#10004;</li>
+                  <li class="list-group-item text-center">&#10004;</li>
                 </ul>
               </div>
             </div>
@@ -277,6 +295,7 @@
               <!--make sure to add margin/padding in between columns-->
               <div class="col-4">
                 <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Check engine and gearbox mountings for security and wear</li>
                   <li class="list-group-item">Under #</li>
                   <li class="list-group-item">Under #</li>
                   <li class="list-group-item">Under #</li>
@@ -360,96 +379,111 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-            Accordion Item #1
+            How does a CJF Mechanics Service work?
           </button>
         </h2>
         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
           <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <p>
+              Your car will be inspected and serviced according to our itemised service schedule using only standard or quality original parts.  
+              Each item will be thoroughly checked by our qualified mechanics and if our inspection identifies advisory work, we’ll contact you for further instructions and quote for parts and labour.
+              You’re under no obligation at all to have any extra work done by us.
+            </p>
           </div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-            Accordion Item #2
+            What car service should I choose?
           </button>
         </h2>
         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
           <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <p>
+              <strong>Interim Service - 6 month service</strong>
+            </p>
+            <p>
+              This 6 month, 40+ point service is designed for the high mileage car user, or where the manufacturer recommends more frequent checks between annual services. 
+              This service includes an oil and filter change, top ups of essential fluids, as well as brake, steering and suspension checks (by removing the wheels).
+            </p>
+            <p>
+              <strong>Full Service - 12 month service</strong>
+            </p>
+            <p>
+              A full service will usually include everything that’s in the interim service plus extra checks and changes. It could include up to 70+ checks on your car. 
+              A full service includes, fuel filter replacement (for diesel cars), alternator hose and vacuum hose inspection, top up of brake fluid, power steering fluid and coolant.
+            </p>
           </div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-            Accordion Item #3
+            How long does a car service take?
           </button>
         </h2>
         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <p>
+              The time taken to complete a service will depend on which service is booked. But as a rough guide:
+            </p>
+            <ul>
+              <li>
+                An interim service is less extensive and includes fewer checks on your car. It may take around an hour or 2 hours.
+              </li>
+              <li>
+                A full service is a check of the whole car, so will take longer. It may take around 3 hours or longer.
+              </li>
+            </ul>
+            <p>
+              Our mechanics will contact you when your car is ready to collect or provide you with a quote if any further work needs carrying out.
+            </p>
+          
           </div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingFour">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-            Accordion Item #4
+            How much does a car service cost
           </button>
         </h2>
         <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <p>
+              We have a fixed price for our services which does not include additional labour and parts if they need to be replaced.
+            </p>
+            <ul>
+              <li>
+                Interim service - €125.
+              </li>
+              <li>
+                Full service - €180.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingFive">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-            Accordion Item #5
+            How important is a car’s service history?
           </button>
         </h2>
         <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingSix">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
-            Accordion Item #6
-          </button>
-        </h2>
-        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
-            Accordion Item #7
-          </button>
-        </h2>
-        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <p>
+              A service history is also something to look out for when you’re buying a used car. It shows you that the car’s been maintained. A missing service history could mean there’s a problem in the car’s past.
+            </p>
+            <p>
+              Making sure your car has a complete service history can help it to keep its value when you sell it. It’ll show buyers that it’s been well looked after and could help you get a better price for it.
+            </p>
           </div>
         </div>
       </div>
     </div>
-
-
   </div>
-
-
-
-
-
 </div>
 
 

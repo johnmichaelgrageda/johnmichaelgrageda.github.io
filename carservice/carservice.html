@@ -8,12 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-<!--navbar-->
-<!--code snippet https://getbootstrap.com/docs/5.3/components/navbar/-->
+<!--------Header-------->
+<!--------Bootstrap 5 Navbar-------->
+<!--------https://getbootstrap.com/docs/5.3/components/navbar/-------->
 <header>
   <nav class="navbar navbar-expand-sm mb-3">
     <div class="container-fluid">
-        <!--replace navbar text with logo?-->
+      <!--------Logo-------->
       <a class="navbar-brand" href="#"> <img src="../images/headerlogo.jpg"></a> 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,7 +33,7 @@
             Services
             </a>
             <ul class="dropdown-menu">
-            <!--add page paths below-->
+            <!--------Navigation-------->
               <li><a class="dropdown-item" href="../brakes/brakes.html">Brakes</a></li>
               <li><a class="dropdown-item" href="../clutch/clutch.html">Clutch Replacement</a></li>
               <li><a class="dropdown-item" href="#">Car Service</a></li>
@@ -40,25 +41,21 @@
             </ul>
             <li class="nav-item">
                 <a class="nav-link" href="../contact/contact.html">Contact Us</a>
-              </li>
+            </li>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 </header>
-  
-<!--add car services content below here-->
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-12">
       <h2>Types Of Car Service</h2>
     </div>
-
-    <!--https://getbootstrap.com/docs/5.0/components/list-group/-->
-    <!--update below, add description of interim and full service, remove bullet list-->
-    <!--https://www.firststop.ie/our-services/car-servicing difference between full and interim service-->
+    <!--------Car Services Page-------->
+    <!--------https://www.firststop.ie/our-services/car-servicing-------->
     <div class="col-lg-6 mt-2">
       <h4>Full Car Service</h4>
       <p>A full car service is ideal for an annual maintenance programme for your car and recommended every 15,000 kilometres or 12 months – Whichever is sooner. 
@@ -74,9 +71,14 @@
   </div>
 
 
-  <!--check list comparison of service types below-->
-  <!--https://getbootstrap.com/docs/5.0/components/accordion/-->
-  <div class="row mt-5">
+  
+  
+
+<!--------Bootstrap 5 Accordion-------->
+<!--------https://getbootstrap.com/docs/5.0/components/accordion/-------->
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+  <!--------Interim and Full Service Comparison, Checklist-------->
+    <div class="row mt-5">
       <div class="col-6 car-service-checklist text-white">
         <h2>Car Service Checklist</h2>
       </div>
@@ -88,298 +90,656 @@
         <h2>Full</h2>
         <p>12 months / 15000 kilometres</p>
       </div>
-
-    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <!--------Replacement-------->
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Replacement
+            <strong>Replacement</strong>
           </button>
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <!--------Bootsrap 5 bullet list-------->
+          <!--------https://getbootstrap.com/docs/5.0/components/list-group/-------->
           <div class="accordion-body">
-            <!--added another div row to format checklist for horizontal comparison-->
-            <div class="row">
-              <!--make sure to add margin/padding in between columns-->
-              <!--https://www.freecodecamp.org/news/checkmark-symbol-html-for-checkmark-unicode/#:~:text=The%20Unicode%20and%20HTML%20Characters%20for%20Checkmarks&text=Remove%20the%20U%2B%20and%20replace,it%20becomes%20%E2%9C%93%20. tick icon-->
-              <div class="col-6">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Engine Oil</li>
-                  <li class="list-group-item">Air Filter</li>
-                  <li class="list-group-item">Oil Filter</li>
-                  <li class="list-group-item">Cabin/Polen Filter</li>
-                  <li class="list-group-item">Brake Fluid</li>
-                </ul>
-              </div>
-              <div class="col-3">
-                <ul class="list-group list-group-flush">
-                  <!--replace tick text with check image? or Yes/No, Included/Not included-->
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                </ul>
-              </div>
-              <div class="col-3">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                </ul>
-              </div>
-            </div>
-
+            <!--------HTML checkmark unicode-------->
+            <!--------https://www.freecodecamp.org/news/checkmark-symbol-html-for-checkmark-unicode/#:~:text=The%20Unicode%20and%20HTML%20Characters%20for%20Checkmarks&text=Remove%20the%20U%2B%20and%20replace,it%20becomes%20%E2%9C%93%20-------->
+            <ul class="list-group list-group-flush">
+              <li class="row mb-0">
+                <div class="col-6">
+                  <p>Engine Oil</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row mb-0">
+                <div class="col-6">
+                  <p>Air Filter</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Oil Filter</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Cabin/Polen Filter</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p></p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Brake Fluid</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p></p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      <!--------Engine-------->
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingTwo">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Engine
+            <strong>Engine</strong>
           </button>
         </h2>
         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
-            <div class="row">
-              <!--make sure to add margin/padding in between columns-->
-              <table class="table table-hover">
-                <tbody>
-                  <tr>
-                    <th scope="row">Fuel filter replacement (for diesel cars)</th>
-                    <td>&#10004;</td>
-                    <td>&#10004;</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Check radiator/cooling system for leaks and check condition of hoses</th>
-                    <td>&#10004;</td>
-                    <td>&#10004;</td>
-                  </tr>
-                </tbody>
-              </table>
-
-
-
-
-
-              <div class="col-6">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Fuel filter replacement (for diesel cars)</li>
-                  <li class="list-group-item">Check radiator/cooling system for leaks and check condition of hoses</li>
-                  <li class="list-group-item">Check for timing belt replacement interval & report if due according to mileage/age</li>
-                  <li class="list-group-item">Check for any visible signs of brake fluid leakage on front and rear back plates</li>
-                  <li class="list-group-item">Check Coolant / Radiator cap seals</li>
-                  <li class="list-group-item">Top up coolant as required</li>
-                  <li class="list-group-item">Check Battery security and condition</li>
-                  <li class="list-group-item">Test alternator charging rate</li>
-                  <li class="list-group-item">Check Spark Plugs and report if due for replacement (additional charge applies)</li>
-                </ul>
-              </div>
-              <div class="col-3">
-                <ul class="list-group list-group-flush">
-                  <!--replace tick text with check image? or Yes/No, Included/Not included-->
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center"> No </li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center"></li>
-                </ul>
-              </div>
-              <div class="col-3">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                  <li class="list-group-item text-center">&#10004;</li>
-                </ul>
-              </div>
-            </div>
+            <ul class="list-group">
+              <li class="row">
+                <div class="col-6">
+                  <p>Fuel filter replacement (for diesel cars)</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check radiator/cooling system for leaks and check condition of hoses</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p></p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check for timing belt replacement interval & report if due according to mileage/age</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check for any visible signs of brake fluid leakage on front and rear back plates</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p></p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check Coolant/Radiator cap seals</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p></p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Top up coolant as required</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p></p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check Battery security and condition</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Test alternator charging rate</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check Spark Plugs and report if due for replacement (additional charge applies)</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      <!--------Vehicle Interior-------->
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            Vehicle Interior
+            <strong>Vehicle Interior</strong>
           </button>
         </h2>
         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
-            <div class="row">
-              <!--make sure to add margin/padding in between columns-->
-              <div class="col-4">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Vehicle Interior #</li>
-                  <li class="list-group-item">Vehicle Interior #</li>
-                  <li class="list-group-item">Vehicle Interior #</li>
-                  <li class="list-group-item">Vehicle Interior #</li>
-                  <li class="list-group-item">Vehicle Interior #</li>
-                </ul>
-              </div>
-              <div class="col-4">
-                <ul class="list-group list-group-flush">
-                  <!--replace tick text with check image? or Yes/No, Included/Not included-->
-                  <li class="list-group-item text-center">Tick 1</li>
-                  <li class="list-group-item text-center">Tick 2</li>
-                  <li class="list-group-item text-center">Tick 3</li>
-                </ul>
-              </div>
-              <div class="col-4">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item text-center">Tick 1</li>
-                  <li class="list-group-item text-center">Tick 2</li>
-                  <li class="list-group-item text-center">Tick 3</li>
-                  <li class="list-group-item text-center">Tick 4</li>
-                  <li class="list-group-item text-center">Tick 5</li>
-                </ul>
-              </div>
-            </div>
-
+            <ul class="list-group">
+              <li class="row">
+                <div class="col-6">
+                  <p>Check operation of instruments gauges all warning lights and horn</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check operation of interior lights</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check gearbox operation</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check steering controls operation</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check handbrake operation</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check brake pedal operation</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check air-conditioning operation</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check all seatbelt operation</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p></p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check all external locks and handles operation</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p></p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Lubricate accessible hinges</p>
+                </div>
+                <div class="col-3 text-center ">
+                  <p></p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      <!--------Vehicle Exterior-------->
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingFour">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-            Vehicle Exterior
+            <strong>Vehicle Exterior</strong>
           </button>
         </h2>
         <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
-            <div class="row">
-              <!--make sure to add margin/padding in between columns-->
-              <div class="col-4">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Vehicle Exterior #</li>
-                  <li class="list-group-item">Vehicle Exterior #</li>
-                  <li class="list-group-item">Vehicle Exterior #</li>
-                  <li class="list-group-item">Vehicle Exterior #</li>
-                  <li class="list-group-item">Vehicle Exterior #</li>
-                </ul>
-              </div>
-              <div class="col-4">
-                <ul class="list-group list-group-flush">
-                  <!--replace tick text with check image? or Yes/No, Included/Not included-->
-                  <li class="list-group-item text-center">Tick 1</li>
-                  <li class="list-group-item text-center">Tick 2</li>
-                  <li class="list-group-item text-center">Tick 3</li>
-                </ul>
-              </div>
-              <div class="col-4">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item text-center">Tick 1</li>
-                  <li class="list-group-item text-center">Tick 2</li>
-                  <li class="list-group-item text-center">Tick 3</li>
-                  <li class="list-group-item text-center">Tick 4</li>
-                  <li class="list-group-item text-center">Tick 5</li>
-                </ul>
-              </div>
-            </div>
+            <ul class="list-group">
+              <li class="row">
+                <div class="col-6">
+                  <p>Check operation exterior lights</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check condition of front and rear wiper blades and operation of washers</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Top up screen washer reservoir</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check wheels and trims for damage</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check exhaust smoke</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check tyre condition and tread depth</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check and adjust tyre pressures</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check wheels for correct balance</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check windscreen condition</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p></p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check number plate condition</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p></p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      <!--------Under body of vehicle-------->    
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingFive">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-            Under body of vehicle
+            <strong>Under body of vehicle</strong>
           </button>
         </h2>
         <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
-            <div class="row">
-              <!--make sure to add margin/padding in between columns-->
-              <div class="col-4">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Check engine and gearbox mountings for security and wear</li>
-                  <li class="list-group-item">Under #</li>
-                  <li class="list-group-item">Under #</li>
-                  <li class="list-group-item">Under #</li>
-                  <li class="list-group-item">Under #</li>
-                  <li class="list-group-item">Under #</li>
-                </ul>
-              </div>
-              <div class="col-4">
-                <ul class="list-group list-group-flush">
-                  <!--replace tick text with check image? or Yes/No, Included/Not included-->
-                  <li class="list-group-item text-center">Tick 1</li>
-                  <li class="list-group-item text-center">Tick 2</li>
-                  <li class="list-group-item text-center">Tick 3</li>
-                </ul>
-              </div>
-              <div class="col-4">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item text-center">Tick 1</li>
-                  <li class="list-group-item text-center">Tick 2</li>
-                  <li class="list-group-item text-center">Tick 3</li>
-                  <li class="list-group-item text-center">Tick 4</li>
-                  <li class="list-group-item text-center">Tick 5</li>
-                </ul>
-              </div>
-            </div>
+            <ul class="list-group">
+              <li class="row">
+                <div class="col-6">
+                  <p>Check front and rear brake pad discs and measure thickness</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check condition and security of steering rack: suspension, mountings and gaiters</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check track rod ends,ball joints for condition wear and security</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check drive shaft joints for wear and gaiter condition and prop shaft joints for wear and condition</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check exhausts system condition,security and leakage</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check security and condition of fuel lines, brake pipes, flexible hoses and handbrake cables</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check for any visible signs of brake fluid leakage on front and rear back plates</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p></p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check front and rear shock absorber, suspension and mountings, for wear, condition and leakage</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Check wheel bearings for excess play or noise</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+            </ul>
           </div>
         </div>
       </div>
+      <!--------Final Checks-------->  
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingSix">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-            Final Checks
+            <strong>Final Checks</strong>
           </button>
         </h2>
         <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
-            <div class="row">
-              <!--make sure to add margin/padding in between columns-->
-              <div class="col-4">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Final #</li>
-                  <li class="list-group-item">Final #</li>
-                  <li class="list-group-item">Final #</li>
-                  <li class="list-group-item">Final #</li>
-                  <li class="list-group-item">Final #</li>
-                </ul>
-              </div>
-              <div class="col-4">
-                <ul class="list-group list-group-flush">
-                  <!--replace tick text with check image? or Yes/No, Included/Not included-->
-                  <li class="list-group-item text-center">Tick 1</li>
-                  <li class="list-group-item text-center">Tick 2</li>
-                  <li class="list-group-item text-center">Tick 3</li>
-                </ul>
-              </div>
-              <div class="col-4">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item text-center">Tick 1</li>
-                  <li class="list-group-item text-center">Tick 2</li>
-                  <li class="list-group-item text-center">Tick 3</li>
-                  <li class="list-group-item text-center">Tick 4</li>
-                  <li class="list-group-item text-center">Tick 5</li>
-                </ul>
-              </div>
-            </div>
+            <ul class="list-group list-group-flush">
+              <li class="row">
+                <div class="col-6">
+                  <p>Reset vehicle service light, subject to data & equipment availability</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Stamp service book</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+              <hr>
+              <li class="row">
+                <div class="col-6">
+                  <p>Vehicle road test</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+                <div class="col-3 text-center">
+                  <p>&#10004;</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-
-
   </div>
 
-  <!--add accordion for Car Service FAQs below-->
+  <!--------Bootstrap 5 Accordion-------->
+  <!--------https://getbootstrap.com/docs/5.0/components/accordion/-------->
+  <!--------Car Service FAQs-------->  
   <div class="row">
     <div class="col-lg-12 mt-5 mb-3">
       <h2>Car Service FAQs</h2>
     </div>
-    
     <div class="accordion" id="accordionPanelsStayOpenExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-            How does a CJF Mechanics Service work?
+           <strong>How does a CJF Mechanics Service work?</strong> 
           </button>
         </h2>
         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
@@ -395,7 +755,7 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-            What car service should I choose?
+            <strong>What car service should I choose?</strong>
           </button>
         </h2>
         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
@@ -420,7 +780,7 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-            How long does a car service take?
+            <strong>How long does a car service take?</strong>
           </button>
         </h2>
         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
@@ -446,7 +806,7 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingFour">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-            How much does a car service cost
+            <strong>How much does a car service cost?</strong>
           </button>
         </h2>
         <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
@@ -468,7 +828,7 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingFive">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-            How important is a car’s service history?
+            <strong>How important is a car’s service history?</strong>
           </button>
         </h2>
         <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
@@ -485,8 +845,6 @@
     </div>
   </div>
 </div>
-
-
 
 <!-- Footer -->
 <footer class="site-footer text-center text-white mt-5">

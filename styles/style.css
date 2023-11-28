@@ -351,3 +351,58 @@ textarea{
     color: red;
 }
 
+/*Newsletter*/
+.newsletter-modal {
+    display: none;
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .newsletter-bg {
+    
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    width: 45%;
+    min-width: 350px;
+  }
+  
+  .row-newsletter{
+    margin: 0 auto;
+    position: relative;
+    width: 100;
+  }
+  
+  
+  form h3 {
+    color: #16354D;
+  }
+  
+  
+   #inputfield {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #6B99C3;}
+    
+  
+  
+ .form-group button {
+    margin: 0;
+    padding: 10px;
+    border: none;
+    background-color: #16354D;
+    color: white;
+ } 
+  
+  .image-newsletter{
+    max-width: 250px
+    
+  }
+
+  /*newsletter end*/

@@ -1,5 +1,5 @@
+/* CLAUDEMAR */
 let popup = document.getElementById("popup");
-
 function openPopup(){
     popup.classList.add("open-popup");
 }
@@ -53,9 +53,9 @@ function validateRadio(){
         }
     }
     if (validate){
-        alert("succesful");
+        
     }else {
-        alert('Select the payment method')
+        
         return false;
     }
 }

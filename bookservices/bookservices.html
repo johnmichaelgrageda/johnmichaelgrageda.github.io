@@ -52,21 +52,21 @@
 
 <!--carousel-->
 <!--code snippet https://getbootstrap.com/docs/5.3/components/carousel/-->
-<!--brakes https://pixabay.com/images/search/brakes/ -->
-<!--engine https://www.pexels.com/search/engine/-->
-<!--repair https://www.pexels.com/search/car%20repair/-->
+<!--https://www.pexels.com/pt-br/foto/automotivo-automotor-automobilistico-carro-9381003/
+https://www.pexels.com/pt-br/foto/adulto-equipamento-maquinario-aparelhos-6720531/
+https://www.pexels.com/pt-br/foto/pessoa-segurando-a-chave-de-fenda-3806275/-->
 <!--image editor https://www.photopea.com/-->
 <div class="container">
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../images/carousel-engine.jpg" class="d-block w-100" alt="EngineImage">
+          <img src="../images/bookServices (1).jpg" class="d-block w-100" alt="EngineImage">
         </div>
         <div class="carousel-item">
-          <img src="../images/carousel-repair.jpg" class="d-block w-100" alt="CarRepair">
+          <img src="../images/bookServices (2).jpg" class="d-block w-100" alt="CarRepair">
         </div>
         <div class="carousel-item">
-          <img src="../images/carousel-brakes.jpg" class="d-block w-100" alt="BrakeService">
+          <img src="../images/bookServices (3).jpg" class="d-block w-100" alt="BrakeService">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -78,63 +78,60 @@
         <span class="visually-hidden">Next</span>
       </button>
   </div>
-    <br>
+    <br><!-- CLAUDEMAR -->
     <div class="container text-center">
-        <div class="row">
-          <div class="col-5">
-            <h3>Book your service with us! 🚗</h3>
-            <form action="" name="myForm" id="myForm" onsubmit="openPopup();" >
-                <!-- NAME -->
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" class="inputsform inputs required"  required oninput="nameValidate()"/>
-                <span class="span-required">Type your name.</span>
-                <!-- EMAIL -->
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" class="inputsform inputs required" required oninput="emailValidate()"/>
-                <span class="span-required">Type a valid E-mail.</span>
-                <!-- PHONE -->
-                <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" id="phone" class="inputsform" pattern="[0-9]{}" required>              
-                <!-- MESSAGE -->
-                <span class="span-required"></span>               
-                <label for="message">Message</label>
-                <textarea name="message" id="message" class="textarea-input" required></textarea>                                    
-          </div>                     
-              <div class="col-5">
-                <br><br><br><br><br><br>
-                  <div class="wrapper-class">                  
-                    <!--Radio checkbox-->
-                    <label for="radio">How would you like to pay? </label><br><br>
-                    <input type="radio" required name="payment" id="credit" onreset="validateRadio()" >
-                    <label for="credit">Credit Card</label><br>
-                    <input type="radio" required name="payment" id="debit" onreset="validateRadio()">
-                    <label for="debit">Debit Card</label><br><br>
-                    <!-- CHECKBOX -->
-                    <label for="">Is it your first service with us?</label><br><br>
-                    <input type="radio" required class="check" name="yesno" id="yes" onclick="valiCheck()">
-                    <label for="yes">Yes, It is my first time! </label><br>
-                    <input type="radio"  required class="check" name="yesno" id="no" onclick='valiCheck()'>
-                    <label for="no">No, I'm already a CJF client.</label><br><br><br><br>
-                    <!-- Terms CHECKBOX -->
-                    <p><input type="checkbox" required id="terms" name="terms" > <label for="terms"> I have read and accept <a href="#">CJF Terms and Conditions.</a></p></label>
-                    <button class="buttonSubmit" id="submitbutton" type="submit" >Submit</button>    
-                  </div>
-                </form>
-                
-                   <!--<img src="../images/carousel-brakes.jpg" alt="breakfix" width="400px" height="100%">-->
-                </div> 
-        </div>    
+      <div class="row">
+        <div class="col-md-5">
+          <h3>Book your service with us! 🚗</h3>
+          <form action="" name="myForm" id="myForm" onsubmit="openPopup();">
+            <!-- NAME -->
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="inputsform inputs required" required oninput="nameValidate()" />
+            <span class="span-required">Type your name.</span>
+            <!-- EMAIL -->
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" class="inputsform inputs required" required
+              oninput="emailValidate()" />
+            <span class="span-required">Type a valid E-mail.</span>
+            <!-- PHONE -->
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" class="inputsform" pattern="/^\d{10}$/" required>
+            <!-- MESSAGE -->
+            <span class="span-required"></span>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" class="textarea-input" required></textarea>
+        </div>
+        <div class="col-md-5">
+          <br><br><br><br><br><br>
+          <div class="wrapper-class">
+            <!--Radio checkbox-->
+            <label for="radio">How would you like to pay? </label><br><br>
+            <input type="radio" required name="payment" id="credit" onreset="validateRadio()">
+            <label for="credit">Credit Card</label><br>
+            <input type="radio" required name="payment" id="debit" onreset="validateRadio()">
+            <label for="debit">Debit Card</label><br><br>
+            <!-- CHECKBOX -->
+            <label for="">Is it your first service with us?</label><br><br>
+            <input type="radio" required class="check" name="yesno" id="yes" onclick="valiCheck()">
+            <label for="yes">Yes, It is my first time! </label><br>
+            <input type="radio" required class="check" name="yesno" id="no" onclick='valiCheck()'>
+            <label for="no">No, I'm already a CJF client.</label><br><br><br><br>
+            <!-- Terms CHECKBOX -->
+            <p><input type="checkbox" required id="terms" name="terms"> <label for="terms"> I have read and accept <a
+                  href="#">CJF Terms and Conditions.</a></p></label>
+            <button class="buttonSubmit" id="submitbutton" type="submit">Submit</button>
+          </div>
+          </form>
+        </div>
       </div>
+      </div><!-- CLAUDEMAR -->
           <div class="popup" id="popup">
               <img src="../images/404-tick.png" alt="">
               <h2>Thank you!</h2>
               <p>Your details has been successfully submitted!</p>
               <button type="button" onclick="closePopup()">Ok</button>
           </div>
-    <div class="container text-center">
-        
-    </div>
-    
+    <div class="container text-center"></div>    
   </div>
 
 <!-- Footer -->
@@ -151,7 +148,6 @@
     </section>
   </div>
 </footer>
-<!-- Footer -->
 <!-- Footer -->
     <script>
 

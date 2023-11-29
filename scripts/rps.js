@@ -39,11 +39,11 @@ const rpsGame = () =>{
         computer = computer.toLowerCase();
 
         if(player === computer){
-            result.textContent = "Tie";
+            result.textContent = "It's a tie!";
         }
         else if(player == "rock"){
             if(computer == "paper"){
-                result.textContent = "CJF Mechanics Won";
+                result.textContent = "CJF Mechanics Won!";
             } 
             else {
                 result.textContent = "You Won!";
@@ -52,7 +52,7 @@ const rpsGame = () =>{
         }  
         else if(player == "paper"){
             if(computer == "scissors"){
-                result.textContent = "CJF Mechanics Won";
+                result.textContent = "CJF Mechanics Won!";
             }
             else {
                 result.textContent = "You Won!";
@@ -60,7 +60,7 @@ const rpsGame = () =>{
         }  
         else if(player == "scissors"){
             if(computer == "rock"){
-                result.textContent = "CJF Mechanics Won";
+                result.textContent = "CJF Mechanics Won!";
             }
             else {
                 result.textContent = "You Won!";
@@ -68,20 +68,6 @@ const rpsGame = () =>{
         }  
     }
 
-    const finGame = () => {
-
-   
-        const playAgain = document.getElementById("play");
-        
-        playerMove.forEach(option => {
-            option.style.display = "none";
-        })
-
-        playAgain.innerText = "Play again";
-        playAgain.addEventListener("click", () => {
-            window.location.reload();
-        })
-    }
         startGame();
 }
 rpsGame();

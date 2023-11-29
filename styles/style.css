@@ -59,6 +59,10 @@
     border-color: red;
 }
 
+.accordion-text-carservice strong, p{
+    font-family: 'Lato', sans-serif !important;
+}
+
 
 /*John*/
 
@@ -194,7 +198,7 @@
 }
 
     /*Form*/
-
+    /* Claudemar */
     .quoteContainer{
     height: 700px;
     
@@ -213,13 +217,10 @@
     .myform{
         width: 100%;
         max-width: 30rem;
+       
         
     }
-
-    label, input, textarea, button{
-        display: block;
-        
-    }
+    
     .inputsform, .textarea-input, .buttonSubmit {
         width: 100%;
         font: inherit;
@@ -229,9 +230,9 @@
     
     .inputsform, .textarea-input {
         margin-bottom: 15px;
-        color: white;      
-        background: #ccd0e2;
-        border: 0.15rem solid gray;
+        color: #ffffff;      
+        background: #E4E5EA;
+        border: 0.15rem solid #D2D2D4;
         border-radius: 25px;
         transition: border-color 0.3s, box-shadow 0.3s; 
     }
@@ -240,12 +241,12 @@
     textarea:hover,
     textarea:focus {
         outline: none;
-        border-color: #3277b3;
-        box-shadow: 0 0 0 0.2125rem #3e5479;
+        border-color: #16354D;
+        box-shadow: 0 0 0 0.2125rem #16354D;
     }
     label {
         margin-bottom: 0.5rem;
-        color: #84868f;
+        color: #16354D;
     }
     textarea{
         min-height: 10rem;
@@ -253,17 +254,18 @@
     }
     .buttonSubmit {    
         border: none;
-        color: white;
-        background-color: #666666;
+        color: #FFFFFF;
+        background-color: #6B99C3;
         cursor: pointer;
         transition: 0.3s;
+        border-radius: 99px;
         margin-top: 20px;
         font-weight: 600;
     }
     .buttonSubmit:hover,
     .buttonSubmit:focus {
         outline: none;
-        background: #1c70d3;
+        background: #16354D;
     }
     #quote{
       display: flex;  
@@ -272,6 +274,7 @@
     #brakes-img{
         max-width: auto;
     }
+
 
 .wrapper-class input[type="radio"] {
     width: 15px;
@@ -288,27 +291,7 @@
     display: inline;
     margin-left: 5px;
     }
-
-.myForm{
-    width: 100%;
-    max-width: 30rem;
-}
-
-.inputsform, .textarea-input, .buttonSubmit {
-    width: 100%;
-    font: inherit;
-    padding: 1.25rem;
-    font-weight: 350;
-}
-
-.inputsform, .textarea-input {
-    margin-bottom: 15px;
-    color: white;      
-    background: #ccd0e2;
-    border: 0.15rem solid gray;
-    border-radius: 20px;
-    transition: border-color 0.3s, box-shadow 0.3s; 
-}
+/*
 input:hover,
 input:focus,
 textarea:hover,
@@ -338,7 +321,7 @@ textarea{
 .buttonSubmit:focus {
     outline: none;
     background: #5c94d4;
-}
+}*/
 .popup{
     width: 30%;
     background: #fff;

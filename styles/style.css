@@ -61,6 +61,10 @@
     border-color: red;
 }
 
+.accordion-text-carservice strong, p{
+    font-family: 'Lato', sans-serif !important;
+}
+
 
 /*John*/
 

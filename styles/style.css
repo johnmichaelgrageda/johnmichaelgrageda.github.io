@@ -1,3 +1,14 @@
+/* Site font*/
+/* Lato, Montserrat and Noto Sans font */
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans:wght@200;400&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+
 /*John*/
 .carousel-inner {
     height: 500px;
@@ -398,10 +409,19 @@ textarea{
 }
 
 .text-about-us{
-    font-size: 25px;
+    font-size: 23px;
     padding-top: 20px;
+    font-style: italic;
 
 }
+
+#h2principles{
+    text-align: center;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+
 
 /*flipping cards*/
 /* THE MAINCONTAINER HOLDS EVERYTHING */
@@ -409,6 +429,7 @@ textarea{
     width: 300px;
     height: 300px;
     background: none;
+    padding: 10px;
    
     
   
@@ -421,8 +442,7 @@ textarea{
     border-radius: 10px;
     transform-style: preserve-3d;
     transition: all 0.8s ease;
-    align-items: center;
-    padding-bottom: 10px;
+    align-items: center;    
   }
   
   /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
@@ -437,9 +457,11 @@ textarea{
     border-radius: 10px;
     backface-visibility: hidden;
     overflow: hidden;
-    background: #ffc728;
-    color: #000;
+    background: #6B99C3;
+    color: #FFFFFF;
     align-items:center;
+ 
+   
   }
   
   /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
@@ -452,35 +474,39 @@ textarea{
     border-radius: 10px;
     backface-visibility: hidden;
     overflow: hidden;
-    background: #fafafa;
-    color: #333;
+    background: #D2D2D4;
+    color: #16354D;
     text-align: center;
     transform: rotateY(180deg);
+    
+    
   }
 
   
 /*Styling of the cards */
 .thefront h2, .theback h2{
-    font-family: 'zilla slab', sans-serif;
-    padding: 30px;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
     font-weight: bold;
     font-size: 24px;
     text-align: center;
+    font-style: italic;
   }
   
   .thefront p, .theback p{
-    font-family: 'zilla slab', sans-serif;
-    padding: 30px;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
   }
-
+/*inverted the color of the png*/
   .thefront img{
    margin-right: auto;
    margin-left: auto;
    display:block;
    padding-top: 20px;
+   filter: brightness(0) invert(1);
   }
 
-  
+/*reveal content*/

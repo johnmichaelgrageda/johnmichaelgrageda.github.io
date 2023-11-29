@@ -386,7 +386,7 @@ textarea{
   
   
    #inputfield {
-    width: 60%;
+    width: 60%; 
     padding: 10px;
     border: 1px solid #6B99C3;}
     
@@ -406,3 +406,116 @@ textarea{
   }
 
   /*newsletter end*/
+
+  /*about page*/
+
+  #about-title{
+    text-align: center;
+    padding-bottom: 30px;
+
+  }  
+
+  #mission-row , #principles-row{
+    background-color: white;
+    padding: 20px ;
+    display: flex;
+    align-items: center;
+    
+  }
+
+#vision-row{
+    background-color: #E4E5EA;
+    padding:20px;
+    display: flex;
+    align-items: center;
+      
+   
+}
+
+.text-about-us{
+    font-size: 25px;
+    padding-top: 20px;
+
+}
+
+/*flipping cards*/
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer{
+    width: 300px;
+    height: 300px;
+    background: none;
+   
+    
+  
+  }
+  
+  /* THE CARD HOLDS THE FRONT AND BACK FACES */
+  .thecard{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+  .thecard:hover{
+    transform: rotateY(180deg);
+  }
+  
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+   .thefront{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #ffc728;
+    color: #000;
+    align-items:center;
+  }
+  
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .theback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fafafa;
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+
+  
+/*Styling of the cards */
+.thefront h2, .theback h2{
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .thefront p, .theback p{
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .thefront img{
+   margin-right: auto;
+   margin-left: auto;
+   display:block;
+   padding-top: 20px;
+  }
+
+  

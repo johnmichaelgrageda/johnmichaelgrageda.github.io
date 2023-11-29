@@ -53,9 +53,9 @@ function validateRadio(){
         }
     }
     if (validate){
-        alert("succesful");
+        
     }else {
-        alert('Select the payment method')
+        
         return false;
     }
 }

@@ -393,14 +393,19 @@ textarea{
     background-color: white;
     text-align: center;
     position: relative;
-    width: 45%;
+    width: 60%;
     min-width: 350px;
+    max-width: 900px;
   }
   
+  .newsletter-col{
+    min-width: 400px;
+  }
+
   .row-newsletter{
     margin: 0 auto;
     position: relative;
-    width: 100;
+    width: 80;
   }
   
   
@@ -410,9 +415,11 @@ textarea{
   
   
    #inputfield {
-    width: 60%; 
-    padding: 10px;
-    border: 1px solid #6B99C3;}
+    width: 65%; 
+    border: 1px solid #6B99C3;
+
+
+}
     
   
   

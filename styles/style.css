@@ -25,9 +25,8 @@
 }
 .clutch-img img {
     object-fit: cover;
-    top: 0;
-    left: 0;
-    min-height: 500px;
+    margin-top: 8px;
+    height: 100%;
 }
 #hiddenDiv { 
     display: none;
@@ -71,6 +70,7 @@
 #bg-clutch {background-image:url(../images/clutch-banner-bg.jpg);
     padding: 50px;
     margin-top: 20px;
+    margin-bottom: 8px;
     background-repeat: no-repeat;
     background-position: center;
 }

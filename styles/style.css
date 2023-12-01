@@ -24,11 +24,14 @@ color: #16354D;
     left: 0;
     min-height: 500px;
 }
+.navbar-toggler {
+    background-color: #FFFFFF !important;
+}
 .navbar-brand img {
     /*change logo to blend with background?*/
     height: 60px;
 }
-.clutch-img img {
+.clutch-img img, .brakes-img img, .brakes-img-2 img{
     object-fit: cover;
     margin-top: 8px;
     height: 100%;
@@ -38,34 +41,44 @@ color: #16354D;
 }
 
 .navbar, .site-footer, .car-service-checklist{
-    background-color: rgb(22,53,77) !important;
+    background-color: #16354D !important;
 }
 
 .nav-link {
     color: #fff !important;
 }
 
+/*Changed index icon colours using CSS filter generator and applied style to image class*/
+/*https://codepen.io/sosuke/pen/Pjoqqp*/
+.index-icons {
+    filter: invert(15%) sepia(38%) saturate(1104%) hue-rotate(165deg) brightness(90%) contrast(89%);
+}
 /*highlight call and book buttons on hover*/
 
-.call-button:hover, .book-button:hover{
-    color: darkblue !important;
+.call-button:hover, .book-button:hover, #submit-btn:hover, #submitbutton:hover{
+    color: #16354D !important;
     font-weight: bold;
-    background-color: #ff8c00;
-    border-color: red;
+    background-color: darkorange;
     transform: scale(1.05);
 }   
+.btn-primary {
+    background-color: #16354D !important;
+}
 .btn-primary:hover{
-    color: darkblue !important;
+    color: #16354D !important;
     background-color: darkorange !important;
-    border-color: red !important;
     transform: scale(1.1);
 }
 
+.accordion-button:not(.collapsed){
+    background-color: #16354D !important;
+    color: #FFFFFF !important;
+}
+
 .nav-link:hover, .dropdown-item:hover{
-    color: darkblue !important;
+    color: #16354D !important;
     font-weight: bold;
     background-color: darkorange !important;
-    border-color: red;
 }
 
 .accordion-text-carservice strong{
@@ -435,6 +448,7 @@ textarea{
     width: 65%; 
     border: 1px solid #6B99C3;
     max-width: 300px;
+    height: 44px;
 }
   
 .form-group{
@@ -595,3 +609,4 @@ textarea{
 #principles-container{
     display: none;
 }
+

@@ -51,10 +51,10 @@
 </header>
   
 <div class="container mb-3">
-  <div class="row mb-5">
+  <div class="row">
       <!--image is fluid, resizes depending on screen size-->
       <!--columns stacks below large devices-->
-      <div class="col-lg-6 mb-3">
+      <div class="col-lg-6 mb-3 clutch-img">
           <!--https://www.vecteezy.com/photo/12812568-clutch-cover-installed-in-a-car-engine-->
           <img src="../images/clutch.jpg" class="img-fluid" alt="clutch-image">
       </div>
@@ -71,16 +71,27 @@
           <p>
               Are you having problems with your clutch? Have you noticed a grinding noise or burning smell when using the clutch? If so, contact our team today and let our technicians have a look. Catch the repair early and don’t run the risk of a complete replacement.
           </p>
-          <!--call button, javascript -->
-          <!--https://stackoverflow.com/questions/17897213/how-to-call-a-phone-number-through-javascript-without-using-a-tag-->
-          <div class="mb-3">
-            <button class="call-button" onclick="window.open('tel: 0891234567', '_self')">Call us on 0891234567</button>
+          <div class="container px-4 text-center align-self-end" id="bg-clutch">
+            <div class="row" >
+              <div class="col-lg-7">
+               <div class="p-3">
+                <button type="button" class="btn btn-primary custom color-buttons-banner" onclick="window.open('tel: 0891234567', '_self')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>  Call us</button>
+               </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="p-3">
+                  <button onclick="window.open('../bookservices/bookservices.html')" type="button" class="btn btn-primary custom color-buttons-banner" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16">
+                    <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                  </svg>  Book a Slot</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <!--book button, javascript, opens new window to bookservices page-->
-          <!--https://www.w3schools.com/jsref/met_win_open.asp-->
-          <div class="mb-3">
-            <button class="book-button" onclick="window.open('../bookservices/bookservices.html')">Book Online</button>
-          </div>
+        </div>
+        </div>  
       </div>
   </div>
 </div>
@@ -103,7 +114,8 @@
         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
           <div class="accordion-body">
             <p>
-              Add content here
+              <!--https://bookmygarage.com/blog/car-clutch-need-to-know/-->
+              Your car's clutch allows you to speed up or slow down by disconnecting the engine from the wheels without switching it off. This is useful because the engine constantly spins, but the wheels don't. The clutch also works with your transmission to get your car moving in the first place. 
             </p>
           </div>
         </div>
@@ -117,7 +129,11 @@
         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
           <div class="accordion-body">
             <p>
-              Add content here
+              <!--https://www.themotoromabudsman.org/useful-information/motoring-advice/getting-to-know-the-clutch-->
+              To allow a car with a manual transmission to change speed and stop without the engine turning off, the connection between the wheels and the engine needs to be disconnected temporarily. When the driver’s foot is not pressing on the clutch pedal, a set of springs keep a pressure plate pushed up against the clutch plate. The springs also push the clutch plate up against the fly wheel which connects the engine to the driveshaft, and transfers motion to the wheels.
+            </p>
+            <p>
+              When the driver applies pressure on the clutch pedal, a release fork is also being pushed down, which pulls the pressure plate away from the clutch plate, thereby breaking the connection between the rotating engine and the wheels. The wheels will continue to turn without the power generated by the engine
             </p>
           </div>
         </div>
@@ -131,7 +147,8 @@
         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
           <div class="accordion-body">
             <p>
-              Add content here
+              <!--https://www.autoprotips.com/where-is-the-clutch-located/-->
+              The clutch is located between flywheel and the gearbox. It used to shift gears, high to low and low to high depending on the speed of the vehicle. A clutch pedal is placed left side of the steering.
             </p>
           </div>
         </div>
@@ -145,7 +162,8 @@
         <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
           <div class="accordion-body">
             <p>
-              Add content here
+              <!--https://www.clutch-pro.com/faq-->
+              In most cases the life of a clutch should see approximately 100,000 km all the way up to 160,000 km, depending on what model car and of course, how hard the vehicle is driven.
             </p>
           </div>
         </div>
@@ -159,8 +177,24 @@
         <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
           <div class="accordion-body">
             <p>
-             Add content here
+             Here are some symptoms of a bad or failing clutch:
             </p>
+            <!--https://www.halfords.com/car-repairs/advice/signs-your-clutch-is-going.html-->
+            <ul>
+              <li>
+                Clutch feels spongy, sticks or vibrates when you press it
+              </li>
+              <li>
+                Squeaking or a grumbling noise when you press down on the pedal
+              </li>
+              <li>
+                Difficulty shifting gears
+              </li>
+              <li>
+                Experience a 'slipping' clutch, which causes a momentary loss of acceleration
+              </li>
+
+            </ul>
 
           </div>
         </div>
@@ -174,7 +208,9 @@
         <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
           <div class="accordion-body">
             <p>
-             Add content here
+              <!--https://www.clutch-pro.com/faq-->
+              In most 2-wheel drive (rear wheel drive) vehicles we see an average cost of €700 for parts and labour. If the vehicle is a sports car or performance vehicle the costs can increase by another €50-€200. 
+              If the vehicle is a standard front wheel drive car, CJF Mechanics offers parts and labour starting at €650. Some newer or all-wheel-drive clutch jobs average out to be approximately €750 - €950 after parts and labour. 
             </p>
 
           </div>
@@ -182,8 +218,6 @@
       </div>
     </div>
   </div>
-
-
 </div>
 
 

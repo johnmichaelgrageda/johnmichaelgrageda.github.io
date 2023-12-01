@@ -4,6 +4,11 @@
 
 *{
     font-family: 'Montserrat', sans-serif;  
+    
+}
+
+h1 {
+color: #16354D;
 }
 
 
@@ -45,7 +50,7 @@
 .call-button:hover, .book-button:hover{
     color: darkblue !important;
     font-weight: bold;
-    background-color: darkorange;
+    background-color: #ff8c00;
     border-color: red;
     transform: scale(1.05);
 }   
@@ -216,27 +221,13 @@
         }
     }
 /*changing style of the banner bootstrap buttons*/
-.color-buttons-banner{
+/* .color-buttons-banner{
     background-color: #6B99C3!important;
-    border: #6B99C3 !important;
-}
+    border: #6B99C3 !important;} */
+
 
     /*Form*/
     /* Claudemar */
-    .quoteContainer{
-    height: 700px;
-    
-
-    }
-
-    .quoteContainer p{
-        background-color: #212529;
-        padding: 10%;
-        color: white;
-        margin-top: 10px;
-        text-align: center;
-        font-weight: bolder;
-    }
 
     .myform{
         width: 100%;
@@ -467,6 +458,10 @@ textarea{
   /*newsletter end*/
 
   /*about page- Federico*/
+
+  .body-aboutus{
+    max-width: 1280px;
+  }
 
   #about-title{
     text-align: center;

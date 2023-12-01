@@ -19,11 +19,14 @@
     left: 0;
     min-height: 500px;
 }
+.navbar-toggler {
+    background-color: #FFFFFF !important;
+}
 .navbar-brand img {
     /*change logo to blend with background?*/
     height: 60px;
 }
-.clutch-img img {
+.clutch-img img, .brakes-img img, .brakes-img-2 img{
     object-fit: cover;
     margin-top: 8px;
     height: 100%;
@@ -42,17 +45,20 @@
 
 /*highlight call and book buttons on hover*/
 
-.call-button:hover, .book-button:hover{
+.call-button:hover, .book-button:hover, #submit-btn:hover, #submitbutton:hover{
     color: darkblue !important;
     font-weight: bold;
     background-color: darkorange;
-    border-color: red;
+    border-color: #FFFFFF;
     transform: scale(1.05);
 }   
+.btn-primary {
+    background-color: #16354D !important;
+}
 .btn-primary:hover{
     color: darkblue !important;
     background-color: darkorange !important;
-    border-color: red !important;
+    border-color: #FFFFFF !important;
     transform: scale(1.1);
 }
 
@@ -444,6 +450,7 @@ textarea{
     width: 65%; 
     border: 1px solid #6B99C3;
     max-width: 300px;
+    height: 44px;
 }
   
 .form-group{

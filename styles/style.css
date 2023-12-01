@@ -396,6 +396,7 @@ textarea{
     width: 60%;
     min-width: 350px;
     max-width: 900px;
+    
   }
   
   .newsletter-col{
@@ -405,7 +406,8 @@ textarea{
   .row-newsletter{
     margin: 0 auto;
     position: relative;
-    width: 80;
+    align-items: center;
+    justify-content: center;
   }
   
   
@@ -417,10 +419,12 @@ textarea{
    #inputfield {
     width: 65%; 
     border: 1px solid #6B99C3;
-
-
+    max-width: 300px;
 }
-    
+  
+.form-group{
+    justify-content: center;
+}
   
   
  .form-group button {
@@ -429,7 +433,7 @@ textarea{
     border: none;
     background-color: #16354D;
     color: white;
- } 
+ }  
   
   .image-newsletter{
     max-width: 250px
@@ -564,4 +568,11 @@ textarea{
    filter: brightness(0) invert(1);
   }
 
-/*reveal content*/
+  #h2principles:hover {
+    
+    font-size: 250%;}
+
+
+#principles-container{
+    display: none;
+}

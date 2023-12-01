@@ -86,7 +86,7 @@
 
 /*John*/
 
-    /*Brakes page*/
+    /*Brakes page- Federico*/
     #bg {background-image:url(../images/Brake-Repair.jpg);
    
     padding: 50px;
@@ -124,6 +124,8 @@
         font-size: 20px;
         font-weight: bold;
     }
+
+  
      
     /* This class is defining the styling for the container element that holds each
     testimonial in a testimonial grid. */
@@ -184,6 +186,7 @@
         border-color: #D2D2D4;
         margin: auto;
         justify-content: center;
+        width:fit-content;
     }   
 
     .checking-test p{
@@ -203,6 +206,7 @@
     #brakeCheckResult{
         font-family: 'Lato', sans-serif;
         padding-top: 30px;
+       
     }
      
     /* This media query in CSS that targets screens with a maximum width of 600 pixels. */
@@ -395,7 +399,7 @@ textarea{
     color: red;
 }
 
-/*Newsletter*/
+/*Newsletter- Federico*/
 .newsletter-modal {
     display: none;
     width: 100vw;
@@ -462,7 +466,7 @@ textarea{
 
   /*newsletter end*/
 
-  /*about page*/
+  /*about page- Federico*/
 
   #about-title{
     text-align: center;

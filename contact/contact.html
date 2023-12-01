@@ -12,14 +12,18 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-<!--------Header-------->
-<!--------Bootstrap 5 Navbar-------->
-<!--------https://getbootstrap.com/docs/5.3/components/navbar/-------->
+<!--Header-->
+
+<!--Bootstrap 5 Navbar-->
+
+<!--https://getbootstrap.com/docs/5.3/components/navbar/-->
+
 <header>
   <nav class="navbar navbar-expand-sm mb-3">
     <div class="container-fluid">
-      <!--------Logo-------->
-      <a class="navbar-brand" href="#"> <img src="../images/headerlogo.jpg"></a> 
+     
+      <!--Logo-->
+      <a class="navbar-brand" href="#"> <img src="../images/headerlogo.jpg" alt="header-logo"></a> 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,7 +41,8 @@
             Services
             </a>
             <ul class="dropdown-menu">
-            <!--------Navigation-------->
+           
+              <!--Navigation-->
               <li><a class="dropdown-item" href="../brakes/brakes.html">Brakes</a></li>
               <li><a class="dropdown-item" href="../clutch/clutch.html">Clutch Replacement</a></li>
               <li><a class="dropdown-item" href="../carservice/carservice.html">Car Service</a></li>
@@ -65,7 +70,7 @@
           <img src="../images/fixingMotor.jpg" class="d-block w-100" alt="CarRepair">
         </div>
         <div class="carousel-item">
-          <img src="../images/motor (2).jpg" class="d-block w-100" alt="BrakeService">
+          <img src="../images/motor-2.jpg" class="d-block w-100" alt="BrakeService">
         </div>
       </div>
       <!--
@@ -90,12 +95,12 @@
           <form action="" name="myForm" id="myForm" onsubmit="openPopup();">
             <!-- NAME -->
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" class="inputsform inputs required" required oninput="nameValidate()" />
+            <input type="text" name="name" id="name" class="inputsform inputs required" required oninput="nameValidate()">
             <span class="span-required">Type your name.</span>
             <!-- EMAIL -->
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email" class="inputsform inputs required" required
-              oninput="emailValidate()" />
+              oninput="emailValidate()">
             <span class="span-required">Type a valid E-mail.</span>
             <!-- PHONE -->
             <label for="phone">Phone Number</label>
@@ -132,15 +137,15 @@
     <!-- Footer -->
     <footer class="site-footer text-center text-white mt-5">
       <div class="container p-1">
-        <section class="mb-4">
+        <div class="mb-4">
           <p>
             CJF Mechanics - The only mechanics you'll need.
           </p>
           <!-- Copyright -->
           <p>
-            © 2023 Copyright CJF Mechanics
+            <span id="copy_ele">&#169;</span> 2023 Copyright CJF Mechanics
           </p>
-        </section>
+        </div>
       </div>
     </footer>
     <!-- Footer -->

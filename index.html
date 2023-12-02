@@ -11,47 +11,47 @@
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
-<!--Google fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans:wght@200;400&display=swap" rel="stylesheet">
 </head>
+<!--------Body-------->
 <body>
-<!--navbar-->
-<!--code snippet https://getbootstrap.com/docs/5.3/components/navbar/-->
+<!--------Header-------->
+<!-- Bootstrap 5 Navbar -->
+<!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
 <header>
   <nav class="navbar navbar-expand-sm mb-3">
     <div class="container-fluid">
-        <!--replace navbar text with logo?-->
-      <a class="navbar-brand" href="#"> <img src="images/headerlogo.jpg" alt="header-logo"></a> 
+      <!--------Logo-------->
+      <a class="navbar-brand" href="#"> <img src="images/headerlogo.jpg" alt="Company Logo"></a> 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active rounded-3" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about/about.html">About</a>
+            <a class="nav-link rounded-3" href="about/about.html">About</a>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle rounded-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Services
             </a>
-            <ul class="dropdown-menu">
-            <!--add page paths below-->
-              <li><a class="dropdown-item" href="brakes/brakes.html">Brakes</a></li>
-              <li><a class="dropdown-item" href="clutch/clutch.html">Clutch Replacement</a></li>
-              <li><a class="dropdown-item" href="carservice/carservice.html">Car Service</a></li>
-              <li><a class="dropdown-item" href="bookservices/bookservices.html">Book an appointment</a></li>
+            <ul class="dropdown-menu ">
+            <!--------Navigation-------->
+              <li><a class="dropdown-item rounded-3" href="brakes/brakes.html">Brakes</a></li>
+              <li><a class="dropdown-item rounded-3" href="clutch/clutch.html">Clutch Replacement</a></li>
+              <li><a class="dropdown-item rounded-3" href="carservice/carservice.html">Car Service</a></li>
+              <li><a class="dropdown-item rounded-3" href="bookservices/bookservices.html">Book an appointment</a></li>
             </ul>
             <li class="nav-item">
-                <a class="nav-link" href="contact/contact.html">Contact Us</a>
+                <a class="nav-link rounded-3" href="contact/contact.html">Contact Us</a>
               </li>
           </li>
         </ul>
@@ -59,27 +59,25 @@
     </div>
   </nav>
 </header>
-  
-
-<!--carousel-->
-<!--code snippet https://getbootstrap.com/docs/5.3/components/carousel/-->
-<!--brakes https://pixabay.com/photos/brake-disc-workshop-automobile-1749633/-->
-<!--engine https://www.pexels.com/photo/an-auto-mechanic-checking-the-engine-of-a-car-4315570/-->
-<!--repair https://www.pexels.com/search/car%20repair/-->
-<!--image editor https://www.photopea.com/-->
+<!--------Header-------->
 <div class="container">
   <div class="text-center">
     <h1>CJF Mechanics - The only mechanics you'll need.</h1>
   </div>
+  <!--------Carousel-------->
+  <!-- bootstrap snippet https://getbootstrap.com/docs/5.3/components/carousel/ -->
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
+          <!-- carousel-engine.jpg https://www.pexels.com/photo/an-auto-mechanic-checking-the-engine-of-a-car-4315570/ -->
           <img src="images/carousel-engine.jpg" class="d-block w-100" alt="EngineImage">
         </div>
         <div class="carousel-item">
+          <!-- carousel-repair.jpg https://www.pexels.com/search/car%20repair/ -->
           <img src="images/carousel-repair.jpg" class="d-block w-100" alt="CarRepair">
         </div>
         <div class="carousel-item">
+          <!-- carousel-brakes.jpg https://pixabay.com/photos/brake-disc-workshop-automobile-1749633/-->
           <img src="images/carousel-brakes.jpg" class="d-block w-100" alt="BrakeService">
         </div>
       </div>
@@ -92,75 +90,71 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
+  <!--------Carousel-------->
   <div class="container text-center mb-4">
+    <!-- Services Description -->
     <div class="row mt-3">
+      <!-- Clutch Replacement Brief Description -->
       <div class="col-md-6 col-lg-3 mb-3 p-3">
         <div>
           <!--https://www.flaticon.com/free-icon/clutch-disc_3903104-->
           <img src="images/index-clutch-icon.png" class="index-icons" alt="Clutch Disc Icon">
         </div>
-        <!--add content here-->
+        
         <h6>Clutch Replacement</h6>
         <p>
           The clutch in your engine is one of the hardest working components allowing your engine to select gears smoothly. The clutch components are made up of the clutch plate, bearings and pressure plate
         </p>
-        <a href="clutch/clutch.html">More</a>
-        <!--add link to page-->
+        <a href="clutch/clutch.html" class="a-more">Learn more</a>
       </div>
+      <!-- Brakes Brief Description -->
       <div class="col-md-6 col-lg-3 mb-3 p-3">
         <div>
           <!--https://www.freepik.com/icon/brake_841118#fromView=keyword&term=Brake&page=1&position=1&uuid=bbe81383-206f-4f2b-a10b-0fe38e5d4a26-->
           <img src="images/index-brakes-icon.png" class="index-icons" alt="Brakes Icon">
         </div>
-        <!--add content here-->
         <h6>Brakes</h6>
         <p>
           Along with your tyres, your brakes and braking system are probably the most important components of your car. Regular brake checks are an important part of any vehicle preventative maintenance plan.
         </p>
-        <a href="brakes/brakes.html">More</a>
-        <!--add link to page-->
+        <a href="brakes/brakes.html " class="a-more">Learn more</a>
       </div>
+      <!-- Car Service Brief Description -->
       <div class="col-md-6 col-lg-3 mb-3 p-3">
         <div>
           <!--https://www.flaticon.com/free-icon/car-repair_6686695?term=car+service&page=1&position=10&origin=tag&related_id=6686695-->
           <img src="images/index-carservice-icon.png" class="index-icons" alt="Car Service Icon">
         </div>
-        <!--add content here-->
         <h6>Car Service</h6>
         <p>
           Regular servicing is absolutely essential in order to keep your car in the best condition and running as it should. Not only is a well-maintained car less likely to break down, fail an NCT and leave you stranded, if it has a detailed service record, it’ll hold its value much better come resale time.
         </p>
-        <a href="carservice/carservice.html">More</a>
-        <!--add link to page-->
+        <a href="carservice/carservice.html" class="a-more">Learn more</a>
       </div>
+      <!-- Book an Appointment Description -->
       <div class="col-md-6 col-lg-3 mb-3 p-3">
         <div>
           <!--https://www.freepik.com/icon/calendar_1286827#fromView=keyword&term=Booking&page=1&position=24&uuid=4d599bde-bdd9-4945-9ae4-a61ee3f86cc0-->
           <img src="images/index-booking-icon.png" class="index-icons" alt="Booking Icon">
         </div>
-        <!--add content here-->
         <h6>Book an appointment</h6>
         <p>
           Click below to book your service appointment.
         </p>
-        
-        <a  href="bookservices/bookservices.html">More</a>
-        <!--add link to page-->
+        <a  href="bookservices/bookservices.html" class="a-more">Learn more</a>
       </div>
     </div>
-    
-
-    
   </div>
 </div>
+<!-- Newsletter Subscription and Mini Game -->
 <div class="container text-center">
   <div class="row">
+    <!-- Newsletter Form -->
     <div class="col-md-6 mb-3">
       <div class="row justify-content-center row-newsletter">
         <div class="col">
-        <form class="news-form">
-          <h3>Newsletter registration</h3>
+        <form id="news-form">
+          <h3>Newsletter Registration</h3>
               <img src="images/headerlogo.jpg" alt="logo" class="image-newsletter">
               <p>Rev up your ride with <b>CJF Mechanics!</b>
               </p><p><i>Subscribe for exclusive updates, expert tips, and special offers—stay in the driver's seat of automotive excellence.</i>
@@ -173,8 +167,9 @@
         </div>
      </div>
     </div>
+    <!-- Mini Game -->
     <div class="col-md-6 mb-3">
-      <h4 class="rpsGame">Click the image to Play</h4>
+      <h3 class="rpsGame">Click the image to Play</h3>
       <img id="rpsImg" src="images/rps.jpg" class="img-fluid mb-1" onclick="show(hiddenDiv)" alt="Rock Paper Scissors Image">
       <!--hidden div, shows only on click event-->
       <div id="hiddenDiv">
@@ -194,7 +189,7 @@
   </div>
 </div>
 
-<!-- Newsletter modal -->
+<!-- Newsletter Modal -->
 <div class="newsletter-modal">
   <div class="newsletter-bg">
     <div class="row justify-content-center row-newsletter">
@@ -217,25 +212,27 @@
     </div>
   </div>
 </div>
-
-<!-- Footer -->
+<!--------Body-------->
+<!--------Footer-------->
 <footer class="site-footer text-center text-white mt-5">
   <div class="container p-1">
     <div class="mb-4">
       <p>
         CJF Mechanics - The only mechanics you'll need.
       </p>
-        <!-- Copyright -->
+        <!--------Copyright-------->
       <p> 
         <span id="copy_ele">&#169;</span>  2023 Copyright CJF Mechanics
       </p>
     </div>
   </div>
 </footer>
-<!-- Footer -->
+<!--------Footer-------->
+<!--------Scripts-------->
     <script defer src="scripts/script.js"></script>
     <script defer src="scripts/rps.js"></script>
     <script defer src="/scripts/newsletter.js"></script>
     <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+<!--------Scripts-------->
+  </body>
 </html>

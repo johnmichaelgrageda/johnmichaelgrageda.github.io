@@ -25,6 +25,7 @@
 .navbar-brand img {
     /*change logo to blend with background?*/
     height: 60px;
+    border-radius: 10px;
 }
 .clutch-img img, .brakes-img img, .brakes-img-2 img{
     object-fit: cover;
@@ -33,14 +34,18 @@
 }
 #hiddenDiv { 
     display: none;
+    color: #16354D;
 }
-
+h3.rpsGame {
+    color: #16354D;
+}
 .navbar, .site-footer, .car-service-checklist{
     background-color: #16354D !important;
 }
 
 .nav-link {
     color: #fff !important;
+    font-weight: bold !important;
 }
 
 /*Changed index icon colours using CSS filter generator and applied style to image class*/
@@ -50,19 +55,21 @@
 }
 /*highlight call and book buttons on hover*/
 
-.call-button:hover, .book-button:hover, #submit-btn:hover, #submitbutton:hover{
-    color: #16354D !important;
-    font-weight: bold;
-    background-color: darkorange;
-    transform: scale(1.05);
-}   
-.btn-primary {
+ 
+.btn-primary, #submitbutton{
     background-color: #16354D !important;
 }
-.btn-primary:hover{
+.btn-primary:hover, #submit-btn:hover, #submitbutton:hover, .button-test:hover{
     color: #16354D !important;
+    font-weight: bold;
     background-color: darkorange !important;
     transform: scale(1.1);
+}
+/*set hover effect text colour to prussian blue, bold and transform to increase size of the element*/
+.a-more:hover {
+    color: #16354D;
+    font-weight: bold;
+    transform: scale(1.1)
 }
 
 .accordion-button:not(.collapsed){
@@ -70,10 +77,19 @@
     color: #FFFFFF !important;
 }
 
+.accordion-button:hover {
+    background-color: #16354D !important;
+    color: #FFFFFF !important;
+}
+
+button#rock, button#paper, button#scissors {
+    width: 90px;
+}
 .nav-link:hover, .dropdown-item:hover{
     color: #16354D !important;
     font-weight: bold;
     background-color: darkorange !important;
+    transform: scale(1.1);
 }
 
 .accordion-text-carservice strong{
@@ -95,7 +111,6 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-
 
 /*John*/
 
@@ -230,8 +245,8 @@
     }
 /*changing style of the banner bootstrap buttons*/
 .color-buttons-banner{
-    background-color: #6B99C3!important;
-    border: #6B99C3 !important;
+    background-color: #16354D !important;
+    color: #ffffff !important;
 }
 
     /*Form*/

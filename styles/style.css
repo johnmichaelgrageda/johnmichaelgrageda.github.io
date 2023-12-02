@@ -7,106 +7,154 @@
     
 }
 
-h1 {
-color: #16354D;
+h1{
+    color: #16354D;
 }
 
+/* This will target all p tags within a div
+div > p {
+    color: #000000;
+} */
 
-/*John*/
+/* -----John Michael Grageda Start----- */
+/* set index h1 heading margins and text colour to prussian blue */
+.index-h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #16354D;
+}
+
+/* set carousel wrapper height */
 .carousel-inner {
     height: 500px;
 }
+
+/* set carousel image poisition and set to resize to fit aspect ratio of its container and will be clipped to fit its given dimensions*/
 .carousel-item img {
     position: absolute;
-    /*prevent image from stretching*/
-    object-fit:cover;
+    object-fit:cover; 
     top: 0;
     left: 0;
     min-height: 500px;
 }
+
+/* set navigation button background colour to white, appears below 576px width */
 .navbar-toggler {
     background-color: #FFFFFF !important;
 }
+
+/* set logo dimension and rounded border */
 .navbar-brand img {
-    /*change logo to blend with background?*/
     height: 60px;
     border-radius: 10px;
 }
-.clutch-img img, .brakes-img , .brakes-img-2 img{
+
+/* set targeted images margins and height */
+.clutch-img img, 
+.brakes-img, 
+.brakes-img-2 img{
     object-fit: cover;
     margin-top: 8px;
     height: 100%;
 }
+
+/* set div to be hidden and text colour to prussian blue when div is releaved*/
 #hiddenDiv { 
     display: none;
     color: #16354D;
 }
+
+/* set heading text colour to prussian blue */
 h3.rpsGame {
     color: #16354D;
 }
-.navbar, .site-footer, .car-service-checklist{
-    background-color: #16354D !important;
-}
 
-.nav-link {
-    color: #fff !important;
-    font-weight: bold !important;
-}
-
-/*Changed index icon colours using CSS filter generator and applied style to image class*/
-/*https://codepen.io/sosuke/pen/Pjoqqp*/
-.index-icons {
-    filter: invert(15%) sepia(38%) saturate(1104%) hue-rotate(165deg) brightness(90%) contrast(89%);
-}
-/*highlight call and book buttons on hover*/
-
-.call-button:hover, .book-button:hover, .submit-btn:hover, #submitbutton:hover{
-    color: #16354D !important;
-    font-weight: bold;
-    background-color: darkorange;
-    transform: scale(1.05);
-}   
+/* set targeted classes background colour to prussian blue */
+.navbar, 
+.site-footer, 
+.car-service-checklist, 
 .btn-primary {
     background-color: #16354D !important;
 }
-.btn-primary:hover, #submit-btn:hover, #submitbutton:hover, .button-test:hover{
+
+/* set navbar links text colour to white and font to bold, added imporant rule to override bootstrap preset styling*/
+.nav-link {
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+}
+
+/*Utilised CSS filter generator and applied filter properties to image class to change icons colour to prussian blue */
+/*https://codepen.io/sosuke/pen/Pjoqqp*/
+.index-icons {
+    filter: 
+    invert(15%) 
+    sepia(38%) 
+    saturate(1104%) 
+    hue-rotate(165deg) 
+    brightness(90%) 
+    contrast(89%);
+}
+
+/* set h6 heading margin */
+.icon-header {
+    margin-top: 10px;
+}
+
+/* set hover effects, text colour to prussian blue, font to bold, background colour to darkorange and transform to increase size of the element*/
+.call-button:hover, 
+.book-button:hover, 
+.button-test:hover, 
+#submit-btn:hover, 
+.btn-primary:hover, 
+#submitbutton:hover {
     color: #16354D !important;
     font-weight: bold;
     background-color: darkorange !important;
-    transform: scale(1.1);
-}
-/*set hover effect text colour to prussian blue, bold and transform to increase size of the element*/
+    transform: scale(1.05);
+} 
+
+/* set hover effect text colour to prussian blue, bold and transform to increase size of the element*/
 .a-more:hover {
     color: #16354D;
     font-weight: bold;
     transform: scale(1.1)
 }
 
-.accordion-button:not(.collapsed){
+/* set accordion collapsed buttons' background colour to prussian blue and text colour to white*/
+.accordion-button:not(.collapsed), #submitbutton{
     background-color: #16354D !important;
     color: #FFFFFF !important;
 }
 
+/* set accordion hover effect on none collapsed buttons' background colour to prussian blue and text colour to white*/
 .accordion-button:hover {
     background-color: #16354D !important;
     color: #FFFFFF !important;
 }
 
-button#rock, button#paper, button#scissors {
+/* set mini game bootstrap buttons width dimension */
+button#rock, 
+button#paper, 
+button#scissors {
     width: 90px;
 }
-.nav-link:hover, .dropdown-item:hover{
+
+/* set navbar links hover effects text colour to prussian blue, font to bold, background colour to darkorange and transform to increase size of the element*/
+.nav-link:hover, 
+.dropdown-item:hover {
     color: #16354D !important;
     font-weight: bold;
     background-color: darkorange !important;
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
+/* set accordion text with Google Fonts */
 .accordion-text-carservice strong{
     font-family: 'Lato', sans-serif !important;
 }
-/*https://www.freepik.com/free-photo/female-mechanic-holding-spare-parts-car_1005668.htm#query=clutch%20repair&position=0&from_view=keyword&track=ais&uuid=19caf867-0d9a-4bfc-ab37-53942c0bdbd3*/
-#bg-clutch {background-image:url(../images/clutch-banner-bg.jpg);
+
+/* set background settings, image pathing, padding and margins */
+#bg-clutch {background-image:url(../images/clutch-banner-bg.jpg); /*https://www.freepik.com/free-photo/female-mechanic-holding-spare-parts-car_1005668.htm#query=clutch%20repair&position=0&from_view=keyword&track=ais&uuid=19caf867-0d9a-4bfc-ab37-53942c0bdbd3*/
     padding: 50px;
     margin-top: 20px;
     margin-bottom: 8px;
@@ -114,16 +162,16 @@ button#rock, button#paper, button#scissors {
     background-position: center;
 }
 
-/*https://www.pexels.com/photo/man-in-blue-denim-jacket-holding-brown-metal-pipe-4489729/*/
-#bg-carservice {background-image:url(../images/carservice-banner-bg.jpg);
+/* set background settings, image pathing, padding and margins */
+#bg-carservice {background-image:url(../images/carservice-banner-bg.jpg); /*https://www.pexels.com/photo/man-in-blue-denim-jacket-holding-brown-metal-pipe-4489729/*/
     padding: 50px;
     margin-top: 20px;
     background-repeat: no-repeat;
     background-position: center;
 }
+/* -----John Michael Grageda End----- */
 
-/*John*/
-
+/* -----Federico Pi Dote Start----- */
     /*Brakes page- Federico*/
     #bg {background-image:url(../images/Brake-Repair.jpg);
    

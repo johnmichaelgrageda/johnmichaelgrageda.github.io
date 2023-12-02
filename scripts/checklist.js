@@ -1,5 +1,6 @@
-
-function displayPrice(){
+//----John Michael Grageda----//
+// create function to display texts in accordion items checklist
+function displayInfo(){
     document.getElementById("engine-oil").innerHTML+="<br>Oil Grades: Semi-Synthetic, Synthetic and Specialist Oil."
     document.getElementById("air-filter").innerHTML+="<br>It is recommended to replace your air filters at least every 19,000 to 24,000 km."
     document.getElementById("oil-filter").innerHTML+="<br>Oil filter is recommended to be replaced  every time you make an oil change."

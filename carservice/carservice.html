@@ -10,18 +10,15 @@
     <link rel="icon" type="image/x-icon" href="/images/CJF-favicon.jpg">
     <link rel="stylesheet" href="../styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <!--Google fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans:wght@200;400&display=swap" rel="stylesheet">
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans:wght@200;400&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-  
-  <!--Bootstrap 5 Navbar-->
-  <!--Header-->
-<!--https://getbootstrap.com/docs/5.3/components/navbar/-->
+<!--------Header-------->
+<!-- Bootstrap 5 Navbar -->
+<!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
 <header>
   <nav class="navbar navbar-expand-sm mb-3">
     <div class="container-fluid">
@@ -59,35 +56,30 @@
     </div>
   </nav>
 </header>
-
+<!--------Header-------->
+<!-- Car Services -->
 <div class="container">
   <div class="row">
     <div class="col-12">
       <h1>Types Of Car Service</h1>
     </div>
-   
-   
-    <!--Car Services Page-->
-    <!--https://www.firststop.ie/our-services/car-servicing-->
+    <!-- text contents from https://www.firststop.ie/our-services/car-servicing-->
     <div class="col-lg-6 mt-2">
       <h4>Full Car Service</h4>
       <p>A full car service is ideal for an annual maintenance programme for your car and recommended every 15,000 kilometres or 12 months – Whichever is sooner. 
         Some manufacturers may recommend more frequent checks. 
       </p>
     </div>
-
     <div class="col-lg-6 mt-2">
       <h4>Interim Car Service</h4>
       <p>Interim Servicing is ideal for vehicles used for short, mainly urban journeys or for those who wish to service vehicles doing very high mileage more regularly. 
         An interim service every 7,500 kilometres or 6 months helps keep your car safe and road worthy between full services.</p>
     </div>
   </div>
-
-
-<!--Bootstrap 5 Accordion-->
-<!--https://getbootstrap.com/docs/5.0/components/accordion/-->
+<!-- Bootstrap 5 Accordion -->
+<!-- bootstrap snippet https://getbootstrap.com/docs/5.0/components/accordion/-->
   <div class="accordion accordion-flush" id="accordionFlushExample">
-  <!--Interim and Full Service Comparison, Checklis--->
+  <!-- Interim and Full Service Checklist -->
     <div class="row mt-3 accordion-text-carservice">
       <div class="col-6 car-service-checklist text-white d-flex align-items-center">
         <h2>Car Service Checklist</h2>
@@ -101,7 +93,7 @@
         <p>12 months / 15000 kilometres</p>
       </div>
       
-      <!--Replacement-->
+      <!-- Replacement -->
       <div class="accordion-item mt-2">
         <h2 class="accordion-header" id="flush-headingOne">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -109,17 +101,13 @@
           </button>
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-          <!--Bootsrap 5 bullet list-->
-          <!--https://getbootstrap.com/docs/5.0/components/list-group/-->
+          <!-- bootstrap snippet https://getbootstrap.com/docs/5.0/components/list-group/-->
           <div class="accordion-body">
-            
-            
-            <!--HTML checkmark unicode-->
-            <!--https://www.freecodecamp.org/news/checkmark-symbol-html-for-checkmark-unicode/#:~:text=The%20Unicode%20and%20HTML%20Characters%20for%20Checkmarks&text=Remove%20the%20U%2B%20and%20replace,it%20becomes%20%E2%9C%93%20-->
+            <!-- HTML checkmark unicode - &#10004; https://www.freecodecamp.org/news/checkmark-symbol-html-for-checkmark-unicode/#:~:text=The%20Unicode%20and%20HTML%20Characters%20for%20Checkmarks&text=Remove%20the%20U%2B%20and%20replace,it%20becomes%20%E2%9C%93%20 -->
             <ul class="list-group list-group-flush">
               <li class="row">
                 <div class="col-6">
-                  <!--https://stackoverflow.com/questions/32895604/can-i-add-onmouseover-attribute-to-run-only-once#:~:text=addEventListener('mouseover'%2C%20(),%2C%20%7B%20once%20%3A%20true%20%7D%20)%3B-->
+                  <!-- onemouseover attribute set to run only once -->
                   <p id="engine-oil" onmouseover="displayPrice(); this.onmouseover = null;">Engine Oil</p>
                 </div>
                 <div class="col-3 text-center">
@@ -130,7 +118,6 @@
                 </div>
                 <hr>
               </li>
-              
               <li class="row">
                 <div class="col-6">
                   <p id="air-filter">Air Filter</p>
@@ -143,7 +130,6 @@
                 </div>
                 <hr>
               </li>
-              
               <li class="row">
                 <div class="col-6">
                   <p id="oil-filter">Oil Filter</p>
@@ -156,7 +142,6 @@
                 </div>
                 <hr>
               </li>
-              
               <li class="row">
                 <div class="col-6">
                   <p id="cabin-filter" >Cabin/Polen Filter</p>
@@ -169,7 +154,6 @@
                 </div>
                 <hr>
               </li>
-              
               <li class="row">
                 <div class="col-6">
                   <p id="brake-fluid">Brake Fluid</p>
@@ -185,8 +169,6 @@
           </div>
         </div>
       </div>
-      
-      
       <!--Engine-->
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingTwo">
@@ -601,8 +583,6 @@
           </div>
         </div>
       </div>
-      
-      
       <!--Under body of vehicle-->    
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingFive">
@@ -732,7 +712,6 @@
           </div>
         </div>
       </div>
-      
       <!--Final Checks-->  
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingSix">
@@ -786,18 +765,20 @@
       </div>
     </div>
   </div>
-  
+  <!-- Background Image -->
   <div class="container">
     <div class="row">
       <div class="container px-4 text-center align-self-end" id="bg-carservice">
           <div class="row" >
             <div class="col-lg-7">
+            <!-- Call Button -->
             <div class="p-3">
               <button type="button" class="btn btn-primary custom color-buttons-banner" onclick="window.open('tel: 0891234567', '_self')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
                 <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
               </svg>  Call us</button>
             </div>
             </div>
+            <!-- Book Button -->
             <div class="col-lg-3">
               <div class="p-3">
                 <button onclick="window.open('../bookservices/bookservices.html')" type="button" class="btn btn-primary custom color-buttons-banner" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16">
@@ -810,10 +791,8 @@
        </div>
     </div>
   </div>
-
-
   <!--Bootstrap 5 Accordion-->
-  <!--https://getbootstrap.com/docs/5.0/components/accordion/-->
+  <!-- bootstrap snippet https://getbootstrap.com/docs/5.0/components/accordion/-->
   <!--Car Service FAQs-->  
   <div class="row accordion-text-carservice">
     <div class="col-lg-12 mt-5 mb-3">
@@ -828,6 +807,9 @@
         </h2>
         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
           <div class="accordion-body">
+            <!-- text contents from https://www.atlasautoservice.ie/car-servicing-2 -->
+            <!-- text contents from https://www.halfords.com/car-servicing/petrol-diesel-servicing/full-service-PRODUCTFULLSERVICE.html -->
+            <!-- text contents from https://www.theaa.ie/service/ -->
             <p>
               Your car will be inspected and serviced according to our itemised service schedule using only standard or quality original parts.  
               Each item will be thoroughly checked by our qualified mechanics and if our inspection identifies advisory work, we’ll contact you for further instructions and quote for parts and labour.
@@ -929,13 +911,14 @@
     </div>
   </div>
 </div>
+<!-- Newsletter Subscription and Mini Game -->
 <div class="container text-center mt-5">
   <div class="row">
     <div class="col-xxl-6 col-md-6 mb-3">
       <div class="row justify-content-center row-newsletter">
         <div class="col">
         <form id="news-form">
-          <h3>Newsletter registration</h3>
+          <h3>Newsletter Registration</h3>
               <img src="../images/headerlogo.jpg" alt="logo" class="image-newsletter">
               <p></p>
               <p>
@@ -951,21 +934,24 @@
         </div>
      </div>
     </div>
+     <!-- JavaScript Mini Game, rps.js-->
     <div class="col-xxl-6 col-md-6 mb-3">
-      <h4 class="rpsGame">Mini Game - Click the image to start playing</h4>
+      <h3 class="rpsGame">Mini Game - Click the image to start playing</h3>
+      <!-- rps.jpg" https://www.vecteezy.com/vector-art/13758208-rock-paper-scissors-banners-with-hand-gestures -->
       <img id="rpsImg" src="../images/rps.jpg" class="img-fluid mb-1" onclick="show(hiddenDiv)" alt="Rock Paper Scissors Image">
       <!--hidden div, shows only on click event-->
       <div id="hiddenDiv">
         <div>
           <h3>Rock, Paper or Scissors?</h3>
         </div>
-        <!--player chooses button options to play-->
-        <!--https://getbootstrap.com/docs/5.3/components/buttons/-->
+        <!-- player chooses button options to play -->
+        <!-- bootstrap buttons https://getbootstrap.com/docs/5.3/components/buttons/ -->
         <div class="playerChoice">
           <button id="rock" class="btn btn-primary mb-1" >Rock</button>
           <button id="paper" class="btn btn-primary mb-1" >Paper</button>
           <button id="scissors" class="btn btn-primary mb-1" >Scissors</button>
         </div>
+        <!-- display result of game, see rps.js -->
         <div class="result"></div>
       </div>
     </div>
@@ -975,7 +961,7 @@
 <footer class="site-footer text-center text-white mt-5">
   <div class="container p-1">
     <div class="mb-4">
-      <p>
+      <p class="mt-4">
         CJF Mechanics - The only mechanics you'll need.
       </p>
         <!--------Copyright-------->
@@ -986,8 +972,10 @@
   </div>
 </footer>
 <!--------Footer-------->
-<script src="../scripts/checklist.js"></script>
-    <script src="../scripts/rps.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!--------Scripts-------->
+  <script src="../scripts/checklist.js"></script>
+  <script src="../scripts/rps.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!--------Scripts-------->
 </body>
 </html>

@@ -1,9 +1,14 @@
 /* Site font*/
-/* Lato, Montserrat and Noto Sans font */
-  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans:wght@200;400&display=swap');
+/* Lato, Montserrat and Noto Sans font 
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans:wght@200;400&display=swap');*/
 
 *{
     font-family: 'Montserrat', sans-serif;  
+    
+}
+
+h1 {
+color: #16354D;
 }
 
 
@@ -27,7 +32,7 @@
     height: 60px;
     border-radius: 10px;
 }
-.clutch-img img, .brakes-img img, .brakes-img-2 img{
+.clutch-img img, .brakes-img , .brakes-img-2 img{
     object-fit: cover;
     margin-top: 8px;
     height: 100%;
@@ -55,8 +60,13 @@ h3.rpsGame {
 }
 /*highlight call and book buttons on hover*/
 
- 
-.btn-primary, #submitbutton{
+.call-button:hover, .book-button:hover, .submit-btn:hover, #submitbutton:hover{
+    color: #16354D !important;
+    font-weight: bold;
+    background-color: darkorange;
+    transform: scale(1.05);
+}   
+.btn-primary {
     background-color: #16354D !important;
 }
 .btn-primary:hover, #submit-btn:hover, #submitbutton:hover, .button-test:hover{
@@ -217,7 +227,7 @@ button#rock, button#paper, button#scissors {
         width:fit-content;
     }   
 
-    .checking-test p{
+    .checking-test h6{
         justify-content: center;
         text-align: center;
         
@@ -248,23 +258,13 @@ button#rock, button#paper, button#scissors {
     background-color: #16354D !important;
     color: #ffffff !important;
 }
+/* .color-buttons-banner{
+    background-color: #6B99C3!important;
+    border: #6B99C3 !important;} */
+
 
     /*Form*/
     /* Claudemar */
-    .quoteContainer{
-    height: 700px;
-    
-
-    }
-
-    .quoteContainer p{
-        background-color: #212529;
-        padding: 10%;
-        color: white;
-        margin-top: 10px;
-        text-align: center;
-        font-weight: bolder;
-    }
 
     .myform{
         width: 100%;
@@ -323,9 +323,6 @@ button#rock, button#paper, button#scissors {
       display: flex;  
     }
 
-    #brakes-img{
-        max-width: auto;
-    }
 
 
 .wrapper-class input[type="radio"] {
@@ -468,7 +465,7 @@ textarea{
   }
   
   
-   #inputfield {
+   .inputfield {
     width: 65%; 
     border: 1px solid #6B99C3;
     max-width: 300px;
@@ -497,6 +494,10 @@ textarea{
 
   /*about page- Federico*/
 
+  /* .body-aboutus{
+    max-width: 1360px;
+  } */
+
   #about-title{
     text-align: center;
     padding-bottom: 30px;
@@ -518,6 +519,9 @@ textarea{
     align-items: center;
       
    
+}
+.aboutrow img{
+    object-fit: cover;
 }
 
 .text-about-us{

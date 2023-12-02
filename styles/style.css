@@ -100,6 +100,9 @@ h3.rpsGame {
     margin-top: 10px;
 }
 
+.custom-shadow {
+    box-shadow: 0px 4px 8px #E4E5EA;
+}
 /* set hover effects, text colour to prussian blue, font to bold, background colour to darkorange and transform to increase size of the element*/
 .call-button:hover, 
 .book-button:hover, 

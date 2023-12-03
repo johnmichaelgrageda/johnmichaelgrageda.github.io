@@ -7,13 +7,17 @@ body, html{
     
 }
 
-h1{
+h1, h4{
     color: #16354D;
 }
 
 /* this targets all p elements within a div and set colour to blue gray*/
-div > p, li {
+div > p, li, i {
     color: #000000 !important;
+}
+
+.aboutrow h2, h2#h2principles{
+    color: #16354D !important;
 }
 
 /* -----John Michael Grageda Start----- */

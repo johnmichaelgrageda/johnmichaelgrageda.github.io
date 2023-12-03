@@ -29,7 +29,7 @@ function removeError(index){
 /* Function that check the length of the name, if the length of the name is less then 4 characters 
 it will activate the function setError that will display a red border in the field. */
 function nameValidate(){
-    if(field[0].value.length <= 4){
+    if(field[0].value.length < 4){
         setError(0);
     }
     else

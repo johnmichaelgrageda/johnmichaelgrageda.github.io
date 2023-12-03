@@ -1,4 +1,4 @@
-//John
+//----John Michael Grageda----//
 //https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
 //display hidden div and rps buttons to play game
 function show(hiddenDiv){
@@ -9,7 +9,7 @@ function show(hiddenDiv){
 //game logics and functions
 const rpsGame = () =>{
 
-
+    //function to play game
     const startGame = () => {
         const playerRock = document.getElementById("rock");
         const playerPaper = document.getElementById("paper");
@@ -19,20 +19,20 @@ const rpsGame = () =>{
         //set array for computer choices
         const computerRPS = ["rock", "paper", "scissors"]
 
-
+        //run random number generator when user clicks the buttons
         playerMove.forEach(option => {
             option.addEventListener("click",function(){
-                //computer randon move using array
+                //computer random move using array and random number generator to select array index
                 const computerRandom = Math.floor(Math.random()*3);
                 const computerMove = computerRPS[computerRandom];
 
-                //check result
+                //call function and check result
                 decider(this.innerText,computerMove)
 
             })
         })
     }
-    //compare choices and display message 
+    //function to check result using conditional statement and display text in .result div
     const decider = (player,computer) => {
         const result = document.querySelector(".result");
         player = player.toLowerCase();
@@ -67,8 +67,9 @@ const rpsGame = () =>{
             }
         }  
     }
-
+        //call start game function to play again
         startGame();
 }
+//call rps game function to play again
 rpsGame();
 

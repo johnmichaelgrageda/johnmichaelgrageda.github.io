@@ -18,10 +18,9 @@
     
 </head>
 <body>
-
-  <!--Header-->
-<!--Bootstrap 5 Navbar-->
-<!--https://getbootstrap.com/docs/5.3/components/navbar/-->
+<!--------Header-------->
+<!-- Bootstrap 5 Navbar -->
+<!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
 <header>
   <nav class="navbar navbar-expand-sm mb-3">
     <div class="container-fluid">
@@ -59,18 +58,17 @@
     </div>
   </nav>
 </header>
-  
+<!--------Header-------->
+<!-- Clutch Replacement -->
 <div class="container mb-3">
-  <div class="row">
-      <!--image is fluid, resizes depending on screen size-->
-      <!--columns stacks below large devices-->
+  <div class="row custom-shadow">
       <div class="col-lg-6 mb-3 clutch-img">
-          <!--https://www.vecteezy.com/photo/12812568-clutch-cover-installed-in-a-car-engine-->
-          <img src="../images/clutch.jpg" class="img-fluid" alt="clutch-image">
+          <!-- clutch.jpg https://www.vecteezy.com/photo/12812568-clutch-cover-installed-in-a-car-engine -->
+          <img src="../images/clutch.jpg" class="img-fluid" alt="clutch-image"> <!-- set image to be fluid - resizes relative to screen size -->
       </div>
+      <!-- Clutch Replacement Description -->
       <div class="col-lg-6">
-          <!--https://donnellanauto.ie/car-repair-galway/#clutchesgalway-->
-          <!--contents extracted from above website, modified-->
+          <!-- text contents from https://donnellanauto.ie/car-repair-galway/#clutchesgalway -->
           <h1 class="text-center">Clutch Replacement</h1>
           <p>
               At CJF Mechanics we can help maintain and service your gearbox/clutch which could save you a lot of money in the long run.
@@ -81,39 +79,40 @@
           <p>
               Are you having problems with your clutch? Have you noticed a grinding noise or burning smell when using the clutch? If so, contact our team today and let our technicians have a look. Catch the repair early and don’t run the risk of a complete replacement.
           </p>
-          <div class="container px-4 text-center align-self-end" id="bg-clutch">
-            <div class="row" >
-              <div class="col-lg-7">
-               <div class="p-3">
-                <button type="button" class="btn btn-primary custom color-buttons-banner" onclick="window.open('tel: 0891234567', '_self')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                </svg>  Call us</button>
-               </div>
+          <!-- Background Image -->
+        <div class="container px-4 text-center align-self-end" id="bg-clutch">
+          <div class="row" >
+            <div class="col-lg-7">
+              <!-- Call Button -->
+              <div class="p-3">
+              <button type="button" class="btn btn-primary custom color-buttons-banner" onclick="window.open('tel: 0891234567', '_self')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg>  Call us</button>
               </div>
-              <div class="col-lg-3">
-                <div class="p-3">
-                  <button onclick="window.open('../bookservices/bookservices.html')" type="button" class="btn btn-primary custom color-buttons-banner" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16">
-                    <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
-                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                  </svg>  Book a Slot</button>
-                </div>
+            </div>
+            <!-- Book Button -->
+            <div class="col-lg-3">
+              <div class="p-3">
+                <button onclick="window.open('../bookservices/bookservices.html')" type="button" class="btn btn-primary custom color-buttons-banner" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16">
+                  <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                </svg>  Book a Slot</button>
               </div>
             </div>
           </div>
         </div>
+      </div>
   </div>  
 </div>
-  
-
+<!-- Bootstrap 5 Accordion -->
 <div class="container mb-5">
-<!--Bootstrap 5 Accordion-->
-  <!--https://getbootstrap.com/docs/5.0/components/accordion/-->
-  <!--Car Service FAQs-->  
-  <div class="row accordion-text-carservice">
+  <!-- bootstrap snippet https://getbootstrap.com/docs/5.0/components/accordion/-->
+  <!-- Clutch Replacement FAQs -->  
+  <div class="row accordion-text-carservice custom-shadow">
     <div class="col-lg-12 mt-3 mb-3">
       <h2>Clutch Replacement FAQs</h2>
     </div>
-    <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -123,7 +122,7 @@
         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
           <div class="accordion-body">
             <p>
-              <!--https://bookmygarage.com/blog/car-clutch-need-to-know/-->
+              <!-- text content from https://bookmygarage.com/blog/car-clutch-need-to-know/-->
               Your car's clutch allows you to speed up or slow down by disconnecting the engine from the wheels without switching it off. This is useful because the engine constantly spins, but the wheels don't. The clutch also works with your transmission to get your car moving in the first place. 
             </p>
           </div>
@@ -138,7 +137,7 @@
         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
           <div class="accordion-body">
             <p>
-              <!--https://www.themotoromabudsman.org/useful-information/motoring-advice/getting-to-know-the-clutch-->
+              <!-- text content from https://www.themotoromabudsman.org/useful-information/motoring-advice/getting-to-know-the-clutch-->
               To allow a car with a manual transmission to change speed and stop without the engine turning off, the connection between the wheels and the engine needs to be disconnected temporarily. When the driver’s foot is not pressing on the clutch pedal, a set of springs keep a pressure plate pushed up against the clutch plate. The springs also push the clutch plate up against the fly wheel which connects the engine to the driveshaft, and transfers motion to the wheels.
             </p>
             <p>
@@ -156,7 +155,7 @@
         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
           <div class="accordion-body">
             <p>
-              <!--https://www.autoprotips.com/where-is-the-clutch-located/-->
+              <!-- text content from https://www.autoprotips.com/where-is-the-clutch-located/ -->
               The clutch is located between flywheel and the gearbox. It used to shift gears, high to low and low to high depending on the speed of the vehicle. A clutch pedal is placed left side of the steering.
             </p>
           </div>
@@ -171,7 +170,7 @@
         <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
           <div class="accordion-body">
             <p>
-              <!--https://www.clutch-pro.com/faq-->
+              <!-- text content from https://www.clutch-pro.com/faq -->
               In most cases the life of a clutch should see approximately 100,000 km all the way up to 160,000 km, depending on what model car and of course, how hard the vehicle is driven.
             </p>
           </div>
@@ -188,7 +187,7 @@
             <p>
              Here are some symptoms of a bad or failing clutch:
             </p>
-            <!--https://www.halfords.com/car-repairs/advice/signs-your-clutch-is-going.html-->
+            <!-- text content from https://www.halfords.com/car-repairs/advice/signs-your-clutch-is-going.html-->
             <ul>
               <li>
                 Clutch feels spongy, sticks or vibrates when you press it
@@ -202,9 +201,7 @@
               <li>
                 Experience a 'slipping' clutch, which causes a momentary loss of acceleration
               </li>
-
             </ul>
-
           </div>
         </div>
       </div>
@@ -217,30 +214,25 @@
         <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
           <div class="accordion-body">
             <p>
-              <!--https://www.clutch-pro.com/faq-->
+              <!-- text content from https://www.clutch-pro.com/faq-->
               In most 2-wheel drive (rear wheel drive) vehicles we see an average cost of €700 for parts and labour. If the vehicle is a sports car or performance vehicle the costs can increase by another €50-€200. 
               If the vehicle is a standard front wheel drive car, CJF Mechanics offers parts and labour starting at €650. Some newer or all-wheel-drive clutch jobs average out to be approximately €750 - €950 after parts and labour. 
             </p>
-
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
-      <!--rock paper scissors image link-->
-      <!--https://www.vecteezy.com/vector-art/13758208-rock-paper-scissors-banners-with-hand-gestures-->
+<!-- Newsletter Subscription and Mini Game -->
 <div class="container text-center">
-  <div class="row">
-    <div class="col-xxl-6 col-md-6 mb-3">
+  <div class="row custom-shadow">
+    <!-- Newsletter Form -->
+    <div class="col-md-6 mb-3">
       <div class="row justify-content-center row-newsletter">
         <div class="col">
         <form id="news-form">
-          <h3>Newsletter registration</h3>
+          <h3>Newsletter Registration</h3>
               <img src="../images/headerlogo.jpg" alt="logo" class="image-newsletter">
               <p></p>
               <p>
@@ -256,21 +248,24 @@
         </div>
      </div>
     </div>
-    <div class="col-xxl-6 col-md-6 mb-3">
-      <h4 class="rpsGame">Mini Game - Click the image to start playing</h4>
+    <!-- JavaScript Mini Game, rps.js-->
+    <div class="col-md-6 mb-3">
+      <h3 class="rpsGame">Click the image to Play</h3>
+      <!-- rps.jpg" https://www.vecteezy.com/vector-art/13758208-rock-paper-scissors-banners-with-hand-gestures -->
       <img id="rpsImg" src="../images/rps.jpg" class="img-fluid mb-1" onclick="show(hiddenDiv)" alt="Rock Paper Scissors Image">
       <!--hidden div, shows only on click event-->
       <div id="hiddenDiv">
         <div>
           <h3>Rock, Paper or Scissors?</h3>
         </div>
-        <!--player chooses button options to play-->
-        <!--https://getbootstrap.com/docs/5.3/components/buttons/-->
+        <!-- player chooses button options to play-->
+        <!-- bootstrap buttons https://getbootstrap.com/docs/5.3/components/buttons/-->
         <div class="playerChoice">
           <button id="rock" class="btn btn-primary mb-1" >Rock</button>
           <button id="paper" class="btn btn-primary mb-1" >Paper</button>
           <button id="scissors" class="btn btn-primary mb-1" >Scissors</button>
         </div>
+        <!-- display result of game, see rps.js -->
         <div class="result"></div>
       </div>
     </div>
@@ -280,7 +275,7 @@
 <footer class="site-footer text-center text-white mt-5">
   <div class="container p-1">
     <div class="mb-4">
-      <p>
+      <p class="mt-4">
         CJF Mechanics - The only mechanics you'll need.
       </p>
         <!--------Copyright-------->
@@ -291,8 +286,10 @@
   </div>
 </footer>
 <!--------Footer-------->
-    <script src="../scripts/script.js"></script>
-    <script src="../scripts/rps.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!--------Scripts-------->
+  <script src="../scripts/script.js"></script>
+  <script src="../scripts/rps.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!--------Scripts-------->
 </body>
 </html>

@@ -55,8 +55,6 @@
     </div>
   </nav>
 </header>
-  
-
 <!--carousel-->
 <!--code snippet https://getbootstrap.com/docs/5.3/components/carousel/-->
 <!--https://www.pexels.com/pt-br/foto/automotivo-automotor-automobilistico-carro-9381003/
@@ -85,13 +83,13 @@ https://www.pexels.com/pt-br/foto/pessoa-segurando-a-chave-de-fenda-3806275/-->
         <span class="visually-hidden">Next</span>
       </button>
   </div>
-    <br>
-    
+    <br><br>
     <!-- CLAUDEMAR -->
+    <!-- BOOK A SERVICE FORM -->
     <div class="container text-center">
       <div class="row">
-        <div class="col-md-5">
-          <h3>Book your service with us! 🚗</h3>
+        <div class="col-md-6">
+          <h3 class="headerContact">Book your service with us! 🚗</h3>
           <form action="" name="myForm" id="myForm" onsubmit="openPopup();">
            
             <!-- NAME -->
@@ -114,8 +112,7 @@ https://www.pexels.com/pt-br/foto/pessoa-segurando-a-chave-de-fenda-3806275/-->
             <label for="message">Message</label>
             <textarea name="message" id="message" class="textarea-input" required></textarea>
         </div>
-        <div class="col-md-5">
-          <br><br><br><br><br><br>
+        <div class="col-md-6">
           <div class="wrapper-class">
             <!--Radio checkbox-->
             <label for="radio">How would you like to pay? </label><br><br>
@@ -124,20 +121,20 @@ https://www.pexels.com/pt-br/foto/pessoa-segurando-a-chave-de-fenda-3806275/-->
             <input type="radio" required name="payment" id="debit" onreset="validateRadio()">
             <label for="debit">Debit Card</label><br><br>
             <!-- CHECKBOX -->
-            <label for="">Is it your first service with us?</label><br><br>
+            <label for="radio">Is it your first service with us?</label><br><br>
             <input type="radio" required class="check" name="yesno" id="yes" onclick="valiCheck()">
             <label for="yes">Yes, It is my first time! </label><br>
             <input type="radio" required class="check" name="yesno" id="no" onclick='valiCheck()'>
             <label for="no">No, I'm already a CJF client.</label><br><br><br><br>
             <!-- Terms CHECKBOX -->
-            <p><input type="checkbox" required id="terms" name="terms"> <label for="terms"> I have read and accept <a
-                  href="#">CJF Terms and Conditions.</a></p></label>
+            <p><input type="checkbox" required id="terms" name="terms"><label for="terms"> I have read and accept <ahref="#">CJF Terms and Conditions.</a></label></p>
             <button class="buttonSubmit" id="submitbutton" type="submit">Submit</button>
           </div>
           </form>
         </div>
       </div>
-      </div><!-- CLAUDEMAR -->
+      </div>
+      <!-- POP UP -->
           <div class="popup" id="popup">
               <img src="../images/404-tick.png" alt="">
               <h2>Thank you!</h2>
@@ -151,7 +148,7 @@ https://www.pexels.com/pt-br/foto/pessoa-segurando-a-chave-de-fenda-3806275/-->
 <footer class="site-footer text-center text-white mt-5">
   <div class="container p-1">
     <div class="mb-4">
-      <p>
+      <p class="mt-4">
         CJF Mechanics - The only mechanics you'll need.
       </p>
         <!--------Copyright-------->
@@ -161,23 +158,8 @@ https://www.pexels.com/pt-br/foto/pessoa-segurando-a-chave-de-fenda-3806275/-->
     </div>
   </div>
 </footer>
-<!--------Footer-------->
-    <script>
-
-{
-    
-    if(!form.terms.checked)
-    {
-        document.getElementById('submitBtn').style.visibility='visible';
-        return false;
-    }
-    else
-    {
-        document.getElementById('submitBtn').style.visibility='hidden';
-        return true;
-    }
-}
-    
+<!-- Script -->
+    <script>    
     </script>
     <script src="../scripts/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    

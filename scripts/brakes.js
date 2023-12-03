@@ -2,9 +2,14 @@
     function checkBrakeCondition() {
         // Set the threshold for brake check (e.g., 20,000 kilometers)
         const brakeCheckLimit = 20000;
-
+       
         // Get the kilometers driven from the user (replace this with your actual mileage data)
         const kilometersDriven = prompt("How many kilometers have you driven since your last brake inspection?");
+        console.log(typeof kilometersDriven);
+            if(!kilometersDriven || isNaN (kilometersDriven)){
+                alert("Please, enter a valid input")
+                return;
+            }
 
         // Additional questions
         const brakeNoise = prompt("Have you noticed any unusual noises when applying the brakes? Enter 'yes' or 'no'");

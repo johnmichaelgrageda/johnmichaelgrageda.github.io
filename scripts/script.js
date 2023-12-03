@@ -81,7 +81,3 @@ function valiCheck(){
         return false;
     }
 }
-const formm = document.getElementById('myForm')
-formm.addEventListener('submit', e => {
-    e.preventDefault()  
-})

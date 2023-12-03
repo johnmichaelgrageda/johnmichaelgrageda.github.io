@@ -1,7 +1,7 @@
 /* Site font*/
-/* Lato, Montserrat and Noto Sans font */
+/* Lato, Montserrat and Noto Sans font 
 
-  @import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap'); */
 
 body, html{
     font-family: 'Montserrat', sans-serif;  

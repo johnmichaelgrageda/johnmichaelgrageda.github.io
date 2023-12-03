@@ -7,14 +7,18 @@ body, html{
     
 }
 
-h1{
+h1, h4{
     color: #16354D;
 }
 
-/* This will target all p tags within a div
-div > p {
-    color: #000000;
-} */
+/* this targets all p elements within a div and set colour to blue gray*/
+div > p, li, i {
+    color: #000000 !important;
+}
+
+.aboutrow h2, h2#h2principles{
+    color: #16354D !important;
+}
 
 /* -----John Michael Grageda Start----- */
 /* set index h1 heading margins and text colour to prussian blue */
@@ -67,6 +71,10 @@ div > p {
 /* set heading text colour to prussian blue */
 h3.rpsGame {
     color: #16354D;
+}
+.result {
+    font-weight: bold;
+    color: darkorange;
 }
 
 /* set targeted classes background colour to prussian blue */

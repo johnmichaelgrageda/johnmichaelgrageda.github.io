@@ -15,9 +15,9 @@
 
 </head>
 <body>
-<!--Header-->
-<!--Bootstrap 5 Navbar-->
-<!--https://getbootstrap.com/docs/5.3/components/navbar/-->
+<!--------Header-------->
+<!-- Bootstrap 5 Navbar -->
+<!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
 <header>
   <nav class="navbar navbar-expand-sm mb-3">
     <div class="container-fluid">
@@ -55,12 +55,11 @@
     </div>
   </nav>
 </header>
-<!--carousel-->
-<!--code snippet https://getbootstrap.com/docs/5.3/components/carousel/-->
+<!--------Carousel-------->
+<!-- bootstrap snippet https://getbootstrap.com/docs/5.3/components/carousel/ -->
 <!--https://www.pexels.com/pt-br/foto/automotivo-automotor-automobilistico-carro-9381003/
 https://www.pexels.com/pt-br/foto/adulto-equipamento-maquinario-aparelhos-6720531/
 https://www.pexels.com/pt-br/foto/pessoa-segurando-a-chave-de-fenda-3806275/-->
-<!--image editor https://www.photopea.com/-->
 <div class="container">
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -83,37 +82,68 @@ https://www.pexels.com/pt-br/foto/pessoa-segurando-a-chave-de-fenda-3806275/-->
         <span class="visually-hidden">Next</span>
       </button>
   </div>
-</div>
-    <br><br>
     <!-- CLAUDEMAR -->
     <!-- BOOK A SERVICE FORM -->
     <div class="container text-center">
-      <div class="row">
-        <div class="col-md-6">
-          <h3 class="headerContact">Book your service with us! 🚗</h3>
-          <form action="." name="myForm" id="myForm" onsubmit="openPopup();">
+      <div class="row mt-5 custom-shadow">
+        <div class="col-md-6 mb-3">
+          <h3 class="headerContact">Book Your Service With Us! 🚗</h3>
+          <form action="" name="myForm" id="myForm" onsubmit="openPopup();">
            
-              <!-- NAME -->
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" class="inputsform inputs required" required oninput="nameValidate()">
-              <span class="span-required">Minimum character entry is 4.</span>
-            
-              <!-- EMAIL -->
-              <label for="email">E-mail</label>
-              <input type="email" name="email" id="email" class="inputsform inputs required" required
-                oninput="emailValidate()">
-              <span class="span-required">Type a valid E-mail.</span>
-            
-              <!-- PHONE -->
-              <label for="phone">Phone Number</label>
-              <input type="tel" name="phone" id="phone" class="inputsform" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
-            
-              <!-- MESSAGE -->
-              <span class="span-required"></span>
-              <label for="message">Message</label>
-              <textarea name="message" id="message" class="textarea-input" required></textarea>
-                
-            </form>
+            <!-- NAME -->
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="inputsform inputs required" required oninput="nameValidate()">
+            <span class="span-required">Minimum character entry is 4.</span>
+           
+            <!-- EMAIL -->
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" class="inputsform inputs required" required
+              oninput="emailValidate()">
+            <span class="span-required">Type a valid E-mail.</span>
+           
+            <!-- PHONE -->
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" class="inputsform" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+           
+            <!-- MESSAGE -->
+            <span class="span-required"></span>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" class="textarea-input" required></textarea>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="wrapper-class">
+            <!--Radio checkbox-->
+            <div>
+              <p>
+                <label for="radio">How would you like to pay? </label>
+              </p>
+            <p>
+            <input type="radio" required name="payment" id="credit" onreset="validateRadio()">
+            <label for="credit">Credit Card</label>
+            </p>
+            <p>
+            <input type="radio" required name="payment" id="debit" onreset="validateRadio()">
+            <label for="debit">Debit Card</label>
+            </p>
+            <!-- CHECKBOX -->
+            <p>
+            <label for="radio">Is it your first service with us?</label>
+            </p>
+            <p>
+            <input type="radio" required class="check" name="yesno" id="yes" onclick="valiCheck()">
+            <label for="yes">Yes, It is my first time! </label>
+            </p>
+            <p>
+            <input type="radio" required class="check" name="yesno" id="no" onclick='valiCheck()'>
+            <label for="no">No, I'm already a CJF client.</label>
+            </p>
+            <!-- Terms CHECKBOX -->
+            </div>
+            <div>
+            <p class="mt-5"><input type="checkbox" required id="terms" name="terms"><label for="terms"> I have read and accept <ahref="#">CJF Terms and Conditions.</a></label></p>
+            <button class="buttonSubmit mt-5" id="submitbutton" type="submit">Submit</button>
+            </div>
+
           </div>
               <div class="col-md-6">
                 <div class="wrapper-class">
@@ -146,29 +176,29 @@ https://www.pexels.com/pt-br/foto/pessoa-segurando-a-chave-de-fenda-3806275/-->
               <button type="button" onclick="closePopup()">Ok</button>
           </div>
     <div class="container text-center"></div>    
-
-
 <!--Footer-->
 <footer class="site-footer text-center text-white mt-5">
   <div class="container p-1">
     <div class="mb-4">
-      <p class="mt-4">
+      <h6 class="mt-4">
         CJF Mechanics - The only mechanics you'll need.
-      </p>
-        <!--Copyright-->
-      <p> 
+      </h6>
+        <!--------Copyright-------->
+      <h6> 
+
         <span id="copy_ele">&#169;</span>  2023 Copyright CJF Mechanics
-      </p>
+      </h6>
     </div>
   </div>
 </footer>
-<!-- Script -->
+<!--------Footer-------->
+<!--------Scripts-------->
     <script>    
     </script>
     <script src="../scripts/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
-    
+<!--------Scripts-------->  
     </body>
 </html>

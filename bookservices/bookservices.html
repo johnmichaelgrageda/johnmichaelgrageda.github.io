@@ -95,7 +95,7 @@ https://www.pexels.com/pt-br/foto/pessoa-segurando-a-chave-de-fenda-3806275/-->
             <!-- NAME -->
             <label for="name">Name</label>
             <input type="text" name="name" id="name" class="inputsform inputs required" required oninput="nameValidate()">
-            <span class="span-required">Type your name.</span>
+            <span class="span-required">Minimum character entry is 4.</span>
            
             <!-- EMAIL -->
             <label for="email">E-mail</label>
@@ -105,7 +105,7 @@ https://www.pexels.com/pt-br/foto/pessoa-segurando-a-chave-de-fenda-3806275/-->
            
             <!-- PHONE -->
             <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone" class="inputsform" pattern="/^\d{10}$/" required>
+            <input type="tel" name="phone" id="phone" class="inputsform" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
            
             <!-- MESSAGE -->
             <span class="span-required"></span>

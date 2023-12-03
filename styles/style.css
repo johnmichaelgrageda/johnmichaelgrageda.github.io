@@ -1,28 +1,22 @@
 /* Site font*/
-/* Lato, Montserrat and Noto Sans font 
-  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans:wght@200;400&display=swap');*/
+/* Lato, Montserrat and Noto Sans font */
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 body, html{
     font-family: 'Montserrat', sans-serif;  
     
 }
 
-/* set h1 and h4 headings text colour to prussian blue */
-h1, h4, .aboutrow h2, h2#h2principles, h2.text-center, .accordion-text-carservice h2 {
-    color: #16354D !important;
+h1{
+    color: #16354D;
 }
 
-/* this targets all p elements within a div and set colour to blue gray*/
-div > p, li, i, form.news-form {
-    color: #000000 !important;
-}
+/* This will target all p tags within a div
+div > p {
+    color: #000000;
+} */
 
-/* set h2 headings text colour to white */
-#h2checklist-1,
-#h2checklist-2,
-#h2checklist-3 {
-    color: #FFFFFF !important;
-}
 /* -----John Michael Grageda Start----- */
 /* set index h1 heading margins and text colour to prussian blue */
 .index-h1 {
@@ -75,10 +69,6 @@ div > p, li, i, form.news-form {
 .rpsGame {
     color: #16354D;
 }
-.result {
-    font-weight: bold;
-    color: darkorange;
-}
 
 /* set targeted classes background colour to prussian blue */
 .navbar, 
@@ -109,7 +99,6 @@ div > p, li, i, form.news-form {
 /* set h6 heading margin */
 .icon-header {
     margin-top: 10px;
-    color: #16354D;
 }
 
 .custom-shadow {
@@ -139,9 +128,6 @@ div > p, li, i, form.news-form {
 .accordion-button:not(.collapsed), #submitbutton{
     background-color: #16354D ;
     color: #FFFFFF ;
-}
-.accordion-button.collapsed{
-    color: #16354D;
 }
 
 /* set accordion hover effect on none collapsed buttons' background colour to prussian blue and text colour to white*/

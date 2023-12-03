@@ -115,7 +115,7 @@ h3.rpsGame {
 .call-button:hover, 
 .book-button:hover, 
 .button-test:hover, 
-#submit-btn:hover, 
+.submit-btn:hover, 
 .btn-primary:hover, 
 #submitbutton:hover {
     color: #16354D !important;
@@ -312,6 +312,7 @@ button#scissors {
             grid-template-columns: 1fr;
         }
     }
+
 /*changing style of the banner bootstrap buttons*/
 .color-buttons-banner{
     background-color: #16354D !important;

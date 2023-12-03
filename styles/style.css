@@ -107,7 +107,7 @@ h3.rpsGame {
 .call-button:hover, 
 .book-button:hover, 
 .button-test:hover, 
-#submit-btn:hover, 
+.submit-btn:hover, 
 .btn-primary:hover, 
 #submitbutton:hover {
     color: #16354D !important;

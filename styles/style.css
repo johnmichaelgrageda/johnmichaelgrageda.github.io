@@ -316,12 +316,22 @@ button#scissors {
 
     /*Form*/
     /* Claudemar */
+    .quoteContainer{
+        height: 700px;  
+    }
 
+    .quoteContainer p{
+        background-color: #212529;
+        padding: 10%;
+        color: white;
+        margin-top: 10px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    /* Form Styling */
     .myform{
         width: 100%;
-        max-width: 30rem;
-       
-        
+        max-width: 30rem;      
     }
     
     .inputsform, .textarea-input, .buttonSubmit {
@@ -331,9 +341,18 @@ button#scissors {
         font-weight: 350;
     }
     
+    .headerContact {
+        color: #16354D;
+
+    }
+    #car {
+        position: relative;
+        cursor: pointer;
+      }
+    
     .inputsform, .textarea-input {
         margin-bottom: 15px;
-        color: #ffffff;      
+        color: #000000;      
         background: #E4E5EA;
         border: 0.15rem solid #D2D2D4;
         border-radius: 25px;
@@ -375,53 +394,30 @@ button#scissors {
     }
 
 
-
+/* Styling of the Radio and checkBox validation */
 .wrapper-class input[type="radio"] {
     width: 15px;
     display: inline;
     
-  }
-  .wrapper-class input[type="checkbox"] {
+  } /* Format the checkbox */
+.wrapper-class input[type="checkbox"] {
     width: 15px;
     display: inline;
     text-align: justify;
   }
+ /* Align the   */
+.wrapper-class{
+    text-align: center;
+    margin-top: 80px;
+}
 .wrapper-class label {
     text-align: center;
     display: inline;
     margin-left: 5px;
-    }
-/*
-input:hover,
-input:focus,
-textarea:hover,
-textarea:focus {
-    outline: none;
-    border-color: #3277b3;
-}
-label {
-    margin-bottom: 0.5rem;
-    color: #84868f;
     
-}
-textarea{
-    min-height: 12.5rem;
-    resize: vertical;
-}
-.buttonSubmit {  
-    border: none;
-    border-radius: 99px;
-    color: white;
-    background-color: #1d90f5;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 5px;
-}
-.buttonSubmit:hover,
-.buttonSubmit:focus {
-    outline: none;
-    background: #5c94d4;
-}*/
+    }
+/* Pop-up style and animation */
+
 .popup{
     width: 30%;
     background: #fff;
@@ -468,7 +464,7 @@ textarea{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Turns in red the input field in the form validation */
 .span-required{
     display: none;
     font-size: 14px;    

@@ -231,7 +231,7 @@
     <div class="col-md-6 mb-3">
       <div class="row justify-content-center row-newsletter">
         <div class="col">
-        <form id="news-form">
+        <form class="news-form">
           <h3>Newsletter Registration</h3>
               <img src="../images/headerlogo.jpg" alt="logo" class="image-newsletter">
               <p></p>
@@ -240,9 +240,12 @@
                 <p>
                 <i>Subscribe for exclusive updates, expert tips, and special offers—stay in the driver's seat of automotive excellence.</i>
               </p>
-              <div class="form-group">
+              <div class="form-group first-show">
               <input class="inputfield" type="email" name="email"  required placeholder="Enter Email Address">
               <button id="submit-btn">Sign Up</button>
+              </div>
+              <div class="subscription-messsage" style="display:none">
+                <p>Thanks. You succesfully subscribed to our Newsletter!</p>
               </div>
         </form>
         </div>
@@ -289,6 +292,7 @@
 <!--------Scripts-------->
   <script src="../scripts/script.js"></script>
   <script src="../scripts/rps.js"></script>
+  <script src="/scripts/newsletter.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <!--------Scripts-------->
 </body>

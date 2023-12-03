@@ -3,48 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CJF Mechanics</title>
+   <!--Added title Favicon keywords and description for better SEO optimization-->
+    <title>Brake Services - CJF Mechanics</title>
+    <meta name="description" content="Ensure your safety on the road with CJF Mechanics' professional brake services. From inspections to repairs, we specialize in keeping your braking system in top condition. Drive securely with CJF Mechanics.">
+    <meta name="keywords" content="brake services, brake inspections, brake repairs, braking system, road safety, CJF Mechanics">
+    <link rel="icon" type="image/x-icon" href="/images/CJF-favicon.jpg">
     <link rel="stylesheet" href="../styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-   <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!--Google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans:wght@200;400&display=swap" rel="stylesheet">
+   
 </head>
 <body>
 <!--navbar-->
 <!--code snippet https://getbootstrap.com/docs/5.3/components/navbar/-->
 <header>
-  <nav class="navbar navbar-expand mb-3">
+  <nav class="navbar navbar-expand-sm mb-3">
     <div class="container-fluid">
-        <!--replace navbar text with logo?-->
-      <a class="navbar-brand" href="#"> <img src="../images/headerlogo.jpg"></a> 
+      <!--------Logo-------->
+      <a class="navbar-brand" href="../index.html"> <img src="../images/headerlogo.jpg" alt="Company Logo"></a> 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            <a class="nav-link active rounded-3" aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../about/about.html">About</a>
+            <a class="nav-link rounded-3" href="../about/about.html">About</a>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle rounded-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Services
             </a>
             <ul class="dropdown-menu">
-            <!--add page paths below-->
-              <li><a class="dropdown-item" href="#">Brakes</a></li>
-              <li><a class="dropdown-item" href="../clutch/clutch.html">Clutch Replacement</a></li>
-              <li><a class="dropdown-item" href="../carservice/carservice.html">Car Service</a></li>
-              <li><a class="dropdown-item" href="../bookservices/bookservices.html">Book an appointment</a></li>
+            <!--------Navigation-------->
+              <li><a class="dropdown-item rounded-3" href="#">Brakes</a></li>
+              <li><a class="dropdown-item rounded-3" href="../clutch/clutch.html">Clutch Replacement</a></li>
+              <li><a class="dropdown-item rounded-3" href="../carservice/carservice.html">Car Service</a></li>
+              <li><a class="dropdown-item rounded-3" href="../bookservices/bookservices.html">Book an appointment</a></li>
             </ul>
             <li class="nav-item">
-                <a class="nav-link" href="../contact/contact.html">Contact Us</a>
-              </li>
+                <a class="nav-link rounded-3" href="../contact/contact.html">Contact Us</a>
+            </li>
           </li>
         </ul>
       </div>
@@ -55,56 +61,205 @@
     <!--Brakes information content-->
     <br>
     <div class="container textBody">
-      <div class="row">
-        <div class="col-lg-8" style="background-color: aqua">
-          
-          <h1>Drive Safe with CJF Mechanics: Professional Brake Services You Can Trust</h1>
+      
+    
+      <div class="row justify-content-center flex-column-reverse flex-lg-row custom-shadow">
+        <div class="col-lg-6 mb-3">
           <!--https://pixabay.com/photos/auto-repair-shop-workshop-brake-disc-1954636/-->
-            <img src="../images/Brakes (1).jpg" alt="brakes" id="brakes-img" class="img-fluid" >
-            
+          <img src="../images/Brakes.jpg" alt="brakes"  class="img-fluid brakes-img">
+        </div>
+        <div class="col-lg-6" >
+               <h1 class="text-center">Brakes inspection and repair</h1>   
+               <br>
               <p>At CJF Mechanics, we understand that the heart of your vehicle's safety lies in its braking system. Our team of dedicated professionals is here to emphasize the importance of regular brake inspections and why entrusting this critical task to experts is essential for your peace of mind on the road.</p>
-            <br>
-            
-            <h3>Precision and Expertise:</h3>
-              <p>Professional mechanics are trained to conduct thorough and precise brake inspections. Their expertise allows them to identify even subtle issues that untrained eyes might overlook.</p>
-              <br>
-           
-            <h3>Comprehensive Assessments</h3>
-              <p>CJF Mechanics conducts comprehensive assessments of your entire braking system, addressing brake pads, rotors, calipers, brake lines, and the master cylinder.</p>
-              <br> 
-
-            <h3>Advanced Diagnostic Tools:</h3>
-              <p>Equipped with state-of-the-art diagnostic tools, we go beyond the basics, identifying even the most subtle issues that might compromise your brake performance.</p>
-              <br>
-
-            <h3>Adherence to Manufacturer Guidelines:</h3>
-              <p>We strictly adhere to manufacturer guidelines, preserving your vehicle's warranty and maintaining the highest standards in brake maintenance and repairs.</p>
-              <br>
-
               <p>When it comes to the safety of your vehicle and everyone on the road, the integrity of your braking system is paramount. While it may be tempting to perform brake inspections yourself, there are compelling reasons why entrusting this task to professionals is not just a recommendation but a crucial aspect of responsible vehicle ownership.</p>
-              <br>
-              <br>
-            <h3>Ready to Drive Safe? Contact CJF Mechanics Today!</h3>
-            <p>Don't compromise on safety – ontact <b>CJF Mechanics</b> for a comprehensive brake service that ensures your vehicle is roadworthy and reliable. Our team is ready to address your brake needs promptly and professionally.</p>
         </div>
-
-
-        <!-- <div class="col-lg-3  offset-lg-1 quoteContainer " style="background-color:#F8F9FA">
-          <p div="quote">Request a quote</p>
-          <form action="" method="POST">  
-            <label for="name"></label>
-            <input type="text" name="name" id="name" class="inputsform inputs required" required placeholder="Name"/>
-            <label for="email"></label>
-            <input type="email" name="email" id="email" class="inputsform inputs required" required placeholder="E-mail" />
-            <label for="phone"></label>
-            <input type="tel" name="phone" id="phone" pattern="[0-9]{}" class="inputsform" required placeholder="Phone number">                
-            <label for="message"></label>
-            <textarea name="message" id="message" class="textarea-input" required placeholder="Message"></textarea>
-            <button class="buttonSubmit"type="submit">Get my free Quote</button>
+        
+      </div>
+      <br><br>
+      <div class="row justify-content-center custom-shadow"> 
+        <div class="col-lg-6" >
+               <h2 class="text-center">Our Services</h2>   
+               <br>
+               <ul>
+                  <li>Brake Repair and Replacement</li>
+                  <li>Brake Pad Inspection and Replacement</li>
+                  <li>Brake Rotor Resurfacing and Replacement</li>
+                  <li>Brake Fluid Flush and Replacement</li>
+                  <li>Brake System Diagnostics</li>
+                  <li>ABS (Anti-lock Braking System) Repair</li>
+                  <li>Brake Caliper Inspection and Service</li>
+                  <li>Brake Line Inspection and Repair</li>
+                  <li>Emergency Brake Inspection and Adjustment</li>
+                  <li>Brake System Upgrades</li>
+               </ul>
+               <br>
+              
+            </div>
+            <div class="col-lg-6 mb-3">
+              <!--<a href="https://www.freepik.com/free-photo/mechanic-fixing-car-brake_1005719.htm#query=mechanic%20brake&position=2&from_view=search&track=ais&uuid=4cfa41b1-60c0-4a4b-882f-99c48cd58f37">Image by peoplecreations</a> on Freepik-->
+              <img src="../images/Brake-services.jpg" alt="brakes services" class="img-fluid brakes-img">
+            </div>
+      </div>  
+      <br>
+      <!-- <div class="row">
+        <h2>Brake check FAQs</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <strong>How often should I have my brakes inspected?</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p><b>Regular brake inspections are crucial for vehicle safety</b>. We recommend scheduling an inspection at least every 20,000 kilometres or following your vehicle manufacturer's guidelines. This proactive approach helps identify potential issues early, ensuring your brakes remain reliable and effective.</p>
+            </div>
+          </div>
         </div>
-      </div>   
-    </div> -->
-<!--Testimonials code https://www.geeksforgeeks.org/html-how-to-add-testimonials/-->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <strong>What are signs that my brakes may need repair?</strong>  
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            <p><b>Pay attention to warning signs</b> such as squeaking or grinding noises, reduced responsiveness, vibrations, or a soft brake pedal. These indicators may suggest worn brake pads, damaged rotors, or other issues. If you notice any of these symptoms, it's advisable to schedule a prompt inspection to address the problem before it escalates.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <strong>How long does a brake repair typically take?</strong>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p><b>The duration of a brake repair can vary depending on the nature of the issue</b>. In general, many brake repairs can be completed within a few hours. However, the specific timeline will be provided after our technicians conduct a thorough inspection and assess the extent of the necessary repairs. We prioritize efficiency without compromising on quality.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <strong>Do you use genuine parts for brake repairs?</strong>
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Yes, at <b>CJF Mechanics</b>, we prioritize the use of genuine or high-quality aftermarket parts for all brake repairs. We understand the importance of quality and reliability when it comes to your vehicle's braking system. <b>Our commitment is to ensure that your brakes perform optimally and meet the highest safety standards</b>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <strong>Can I drive my car immediately after a brake repair?</strong>
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            <p>While the duration of the break-in period may vary based on the specific brake repair performed, <b>we generally recommend a short break to allow the braking system to settle</b>. Our technicians will provide you with specific instructions based on the nature of the repair, ensuring that your vehicle is safe and ready for the road after the service.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div> -->
+      <section>
+        <div class="row accordion-text-carservice custom-shadow">
+            <div class="col-lg-12 mt-5 mb-3">
+              <h2>Brake check FAQs</h2>
+            </div>
+            <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <strong>How often should I have my brakes inspected?</strong>  
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    <p><b>Regular brake inspections are crucial for vehicle safety</b>. We recommend scheduling an inspection at least every 20,000 kilometres or following your vehicle manufacturer's guidelines. This proactive approach helps identify potential issues early, ensuring your brakes remain reliable and effective.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    <strong>What are signs that my brakes may need repair?</strong>  
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                    
+                    <p><b>Pay attention to warning signs</b> such as squeaking or grinding noises, reduced responsiveness, vibrations, or a soft brake pedal. These indicators may suggest worn brake pads, damaged rotors, or other issues. If you notice any of these symptoms, it's advisable to schedule a prompt inspection to address the problem before it escalates.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    <strong>How long does a brake repair typically take?</strong>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    
+                    <p><b>The duration of a brake repair can vary depending on the nature of the issue</b>. In general, many brake repairs can be completed within a few hours. However, the specific timeline will be provided after our technicians conduct a thorough inspection and assess the extent of the necessary repairs. We prioritize efficiency without compromising on quality.</p>
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    <strong>Do you use genuine parts for brake repairs?</strong>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body">
+                    <p>Yes, at <b>CJF Mechanics</b>, we prioritize the use of genuine or high-quality aftermarket parts for all brake repairs. We understand the importance of quality and reliability when it comes to your vehicle's braking system. <b>Our commitment is to ensure that your brakes perform optimally and meet the highest safety standards</b>.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                    <strong>Can I drive my car immediately after a brake repair?</strong>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                  <div class="accordion-body">
+                    <p>While the duration of the break-in period may vary based on the specific brake repair performed, <b>we generally recommend a short break to allow the braking system to settle</b>. Our technicians will provide you with specific instructions based on the nature of the repair, ensuring that your vehicle is safe and ready for the road after the service.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+        <br>
+       <section class="container checking-test">
+            <div class="row">
+            <h6>Ensure your vehicle's safety by performing a quick brake check. Click the button below to get started:</h6>
+          </div>
+          <div class="row">
+            <button onclick="startBrakeCheck()" class="button-test">Start Test</button> 
+              <!-- <img src="/images/check-test.png" id="startBrakeCheckImage"  alt="Start Brake Check" onclick="startBrakeCheck()">  -->
+          </div>
+          <div class="row">
+           <!-- <button onclick="startBrakeCheck()" class="button-test">Start Brake Check</button>-->
+            <div id="brakeCheckResult" onclick="clearResults()">
+            </div>
+          </div>
+          
+
+       </section> 
+
+       
+<!--Testimonials code https://geeksforgeeks.org/html-how-to-add-testimonials/-->
     
 <div class="testimonial-grid">
       <!-- Testimonial container... -->
@@ -113,7 +268,7 @@
       and `<div class="testimonial-text">`. -->
               <div class="testimonial-container">
                   <div class="testimonial-avatar">
-                      <img src="/images/Michael-Thomson-Testimonial.jpg" alt="CJF Testimonial">
+                      <img src="../images/Michael-Thomson-Testimonial.jpg" alt="CJF Testimonial">
                   </div>
                   <div class="testimonial-text">
                       <p class="testimonial-name">Michael Thompson</p>
@@ -124,7 +279,7 @@
               <!-- Testimonial containers... -->
               <div class="testimonial-container">
                   <div class="testimonial-avatar">
-                     <img src="/images/Marie-Healey-Testimonial.jpg" alt="CJF Testimonial">
+                     <img src="../images/Marie-Healey-Testimonial.jpg" alt="CJF Testimonial">
                   </div>
                   <div class="testimonial-text">
                       <p class="testimonial-name">Marie Healey</p>
@@ -137,15 +292,16 @@
               <!-- Testimonial containers... -->
               <div class="testimonial-container">
                   <div class="testimonial-avatar">
-                    <img src="/images/John-Doe-Testimonial.jpg" alt="CJF Testimonial">
+                    <img src="../images/John-Doe-Testimonial.jpg" alt="CJF Testimonial">
                   </div>
                   <div class="testimonial-text">
                       <p class="testimonial-name">John Doe</p>
                       <p class="testimonial-role">Road trip ready!</p>
-      <p>"Preparing for a road trip, I chose CJF Mechanics for a comprehensive brake check. Their professionalism and attention to detail gave me peace of mind. Ready for the open road!"</p>
+                      <p>"Preparing for a road trip, I chose CJF Mechanics for a comprehensive brake check. Their professionalism and attention to detail gave me peace of mind. Ready for the open road!"</p>
                   </div>
               </div>
           </div>
+          
 
 
 
@@ -153,17 +309,17 @@
 
 <!--Banner calls-->
     <div class="container px-4 text-center" id="bg">
-      <div class="row gx-5" >
+      <div class="row" >
         <div class="col-lg-7">
          <div class="p-3">
-          <button type="button" class="btn btn-primary custom" onclick="window.open('tel: 0891234567', '_self')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+          <button type="button" class="btn btn-primary custom color-buttons-banner" onclick="window.open('tel: 0891234567', '_self')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
             <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
           </svg>  Call us</button>
          </div>
         </div>
         <div class="col-lg-3">
           <div class="p-3">
-            <button onclick="window.open('../bookservices/bookservices.html')" type="button" class="btn btn-primary custom" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16">
+            <button onclick="window.open('../bookservices/bookservices.html')" type="button" class="btn btn-primary custom color-buttons-banner" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16">
               <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
               <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
             </svg>  Book a Slot</button>
@@ -171,67 +327,29 @@
         </div>
       </div>
     </div>
-
-  <div class="container text-center">
-    <div class="row mt-3">
-      <div class="col-lg-3 border border-primary ">
-        <!--add con tent here-->
-        <h6>Clutch Replacement</h6>
-        <p>
-          The clutch in your engine is one of the hardest working components allowing your engine to select gears smoothly. The clutch components are made up of the clutch plate, bearings and pressure plate
-        </p>
-        <a href="#">More</a>
-        <!--add link to page-->
-      </div>
-      <div class="col-lg-3 border border-primary">
-        <!--add content here-->
-        <h6>Brakes</h6>
-        <p>
-          Along with your tyres, your brakes and braking system are probably the most important components of your car. Regular brake checks are an important part of any vehicle preventative maintenance plan.
-        </p>
-        <a href="#">More</a>
-        <!--add link to page-->
-      </div>
-      <div class="col-lg-3 border border-primary">
-        <!--add content here-->
-        <h6>Wheel Alignment</h6>
-        <p>
-          At Atlas Autoservice, we are specialists in wheel alignment, using the most sophisticated computer technology for four-wheel alignment.
-        </p>
-        <a href="#">More</a>
-        <!--add link to page-->
-      </div>
-      <div class="col-lg-3 border border-primary" >
-        <!--add content here-->
-        <h6>Book</h6>
-        <p>
-          Booking details
-        </p>
-        
-        <a href="#">More</a>
-        <!--add link to page-->
-      </div>
-    </div>
   </div>
-</div>
+  
 
+ 
 
-<!-- Footer -->
-<footer class="bg-dark text-center text-white mt-5">
-  <div class="container p-3">
-    <section class="mb-4">
-      <p>
+<!--------Footer-------->
+<footer class="site-footer text-center text-white mt-5">
+  <div class="container p-1">
+    <div class="mb-4">
+      <p class="mt-4">
         CJF Mechanics - The only mechanics you'll need.
       </p>
-        <!-- Copyright -->
+        <!--------Copyright-------->
       <p> 
-        © 2023 Copyright CJF Mechanics
+        <span id="copy_ele">&#169;</span> 2023 Copyright CJF Mechanics
       </p>
-    </section>
+    </div>
   </div>
 </footer>
-<!-- Footer -->
-
+<!--------Footer-------->
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/rps.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/scripts/brakes.js"></script>
 </body>
 </html>

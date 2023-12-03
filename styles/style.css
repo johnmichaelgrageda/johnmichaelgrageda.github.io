@@ -1,72 +1,183 @@
 /* Site font*/
-/* Lato, Montserrat and Noto Sans font */
-  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans:wght@200;400&display=swap');
+/* Lato, Montserrat and Noto Sans font 
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans:wght@200;400&display=swap');*/
 
 *{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;  
     
 }
 
+h1{
+    color: #16354D;
+}
 
+/* This will target all p tags within a div
+div > p {
+    color: #000000;
+} */
 
-/*John*/
+/* -----John Michael Grageda Start----- */
+/* set index h1 heading margins and text colour to prussian blue */
+.index-h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #16354D;
+}
+
+/* set carousel wrapper height */
 .carousel-inner {
     height: 500px;
 }
+
+/* set carousel image poisition and set to resize to fit aspect ratio of its container and will be clipped to fit its given dimensions*/
 .carousel-item img {
     position: absolute;
-    /*prevent image from stretching*/
-    object-fit:cover;
+    object-fit:cover; 
     top: 0;
     left: 0;
     min-height: 500px;
 }
-.navbar-brand img {
-    /*change logo to blend with background?*/
-    height: 60px;
+
+/* set navigation button background colour to white, appears below 576px width */
+.navbar-toggler {
+    background-color: #FFFFFF !important;
 }
 
+/* set logo dimension and rounded border */
+.navbar-brand img {
+    height: 60px;
+    border-radius: 10px;
+}
+
+/* set targeted images margins and height */
+.clutch-img img, 
+.brakes-img, 
+.brakes-img-2 img{
+    object-fit: cover;
+    margin-top: 8px;
+    height: 100%;
+}
+
+/* set div to be hidden and text colour to prussian blue when div is releaved*/
 #hiddenDiv { 
     display: none;
+    color: #16354D;
 }
 
-.navbar, .site-footer, .car-service-checklist{
-    background-color: rgb(22,53,77) !important;
+/* set heading text colour to prussian blue */
+h3.rpsGame {
+    color: #16354D;
 }
 
+/* set targeted classes background colour to prussian blue */
+.navbar, 
+.site-footer, 
+.car-service-checklist, 
+.btn-primary {
+    background-color: #16354D !important;
+}
+
+/* set navbar links text colour to white and font to bold, added imporant rule to override bootstrap preset styling*/
 .nav-link {
-    color: #fff !important;
+    color: #FFFFFF !important;
+    font-weight: bold !important;
 }
 
-/*highlight call and book buttons on hover*/
+/*Utilised CSS filter generator and applied filter properties to image class to change icons colour to prussian blue */
+/*https://codepen.io/sosuke/pen/Pjoqqp*/
+.index-icons {
+    filter: 
+    invert(15%) 
+    sepia(38%) 
+    saturate(1104%) 
+    hue-rotate(165deg) 
+    brightness(90%) 
+    contrast(89%);
+}
 
-.call-button:hover, .book-button:hover{
-    color: darkblue !important;
+/* set h6 heading margin */
+.icon-header {
+    margin-top: 10px;
+}
+
+.custom-shadow {
+    box-shadow: 0px 4px 8px #E4E5EA;
+}
+/* set hover effects, text colour to prussian blue, font to bold, background colour to darkorange and transform to increase size of the element*/
+.call-button:hover, 
+.book-button:hover, 
+.button-test:hover, 
+#submit-btn:hover, 
+.btn-primary:hover, 
+#submitbutton:hover {
+    color: #16354D !important;
     font-weight: bold;
-    background-color: darkorange;
-    border-color: red;
+    background-color: darkorange !important;
     transform: scale(1.05);
-}   
-.btn-primary:hover{
-    color: darkblue !important;
-    background-color: darkorange !important;
-    border-color: red !important;
-    transform: scale(1.1);
+} 
+
+/* set hover effect text colour to prussian blue, bold and transform to increase size of the element*/
+.a-more:hover {
+    color: #16354D;
+    font-weight: bold;
+    transform: scale(1.1)
 }
 
-.nav-link:hover, .dropdown-item:hover{
-    color: darkblue !important;
+/* set accordion collapsed buttons' background colour to prussian blue and text colour to white*/
+.accordion-button:not(.collapsed), #submitbutton{
+    background-color: #16354D !important;
+    color: #FFFFFF !important;
+}
+
+/* set accordion hover effect on none collapsed buttons' background colour to prussian blue and text colour to white*/
+.accordion-button:hover {
+    background-color: #16354D !important;
+    color: #FFFFFF !important;
+}
+
+/* set mini game bootstrap buttons width dimension */
+button#rock, 
+button#paper, 
+button#scissors {
+    width: 90px;
+}
+
+/* set navbar links hover effects text colour to prussian blue, font to bold, background colour to darkorange and transform to increase size of the element*/
+.nav-link:hover, 
+.dropdown-item:hover {
+    color: #16354D !important;
     font-weight: bold;
     background-color: darkorange !important;
-    border-color: red;
+    transform: scale(1.02);
 }
 
+/* set accordion text with Google Fonts */
+.accordion-text-carservice strong{
+    font-family: 'Lato', sans-serif !important;
+}
 
-/*John*/
+/* set background settings, image pathing, padding and margins */
+#bg-clutch {background-image:url(../images/clutch-banner-bg.jpg); /*https://www.freepik.com/free-photo/female-mechanic-holding-spare-parts-car_1005668.htm#query=clutch%20repair&position=0&from_view=keyword&track=ais&uuid=19caf867-0d9a-4bfc-ab37-53942c0bdbd3*/
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-    /*Brakes page*/
+/* set background settings, image pathing, padding and margins */
+#bg-carservice {background-image:url(../images/carservice-banner-bg.jpg); /*https://www.pexels.com/photo/man-in-blue-denim-jacket-holding-brown-metal-pipe-4489729/*/
+    padding: 50px;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* -----John Michael Grageda End----- */
+
+/* -----Federico Pi Dote Start----- */
+    /*Brakes page- Federico*/
     #bg {background-image:url(../images/Brake-Repair.jpg);
-    width: auto;
+   
     padding: 50px;
     margin-top: 20px;
     background-repeat: no-repeat;
@@ -102,6 +213,8 @@
         font-size: 20px;
         font-weight: bold;
     }
+
+  
      
     /* This class is defining the styling for the container element that holds each
     testimonial in a testimonial grid. */
@@ -128,6 +241,11 @@
     .testimonial-text {
         margin-bottom: 20px;
         font-style: italic;
+        
+    }
+
+    .testimonial-text p{
+        font-family: 'Lato', sans-serif;
     }
      
     .testimonial-name {
@@ -141,6 +259,44 @@
         font-size: 16px;
         color: #666666;
     }
+
+    /* test for brake page*/
+    .checking-test{
+        background-color: #6B99C3;
+        color: white;
+        margin: auto;
+        padding-bottom: 20px;
+        
+    }
+
+    .checking-test button{
+        color:white;
+        background-color: #16354D;
+        border-color: #D2D2D4;
+        margin: auto;
+        justify-content: center;
+        width:fit-content;
+    }   
+
+    .checking-test h6{
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    #startBrakeCheckImage{
+        max-width: 70px;
+        margin:auto;
+       
+        margin-bottom: -30px;
+        
+    }
+
+    #brakeCheckResult{
+        font-family: 'Lato', sans-serif;
+        padding-top: 30px;
+       
+    }
      
     /* This media query in CSS that targets screens with a maximum width of 600 pixels. */
     @media screen and (max-width: 600px) {
@@ -148,6 +304,15 @@
             grid-template-columns: 1fr;
         }
     }
+/*changing style of the banner bootstrap buttons*/
+.color-buttons-banner{
+    background-color: #16354D !important;
+    color: #ffffff !important;
+}
+/* .color-buttons-banner{
+    background-color: #6B99C3!important;
+    border: #6B99C3 !important;} */
+
 
     /*Form*/
     /* Claudemar */
@@ -228,22 +393,19 @@
       display: flex;  
     }
 
-    #brakes-img{
-        max-width: auto;
-    }
 
 /* Styling of the Radio and checkBox validation */
 .wrapper-class input[type="radio"] {
     width: 15px;
     display: inline;
     
-  }
+  } /* Format the checkbox */
 .wrapper-class input[type="checkbox"] {
     width: 15px;
     display: inline;
     text-align: justify;
   }
-
+ /* Align the   */
 .wrapper-class{
     text-align: center;
     margin-top: 80px;
@@ -309,7 +471,7 @@
     color: red;
 }
 
-/*Newsletter*/
+/*Newsletter- Federico*/
 .newsletter-modal {
     display: none;
     width: 100vw;
@@ -327,14 +489,21 @@
     background-color: white;
     text-align: center;
     position: relative;
-    width: 45%;
+    width: 60%;
     min-width: 350px;
+    max-width: 900px;
+    
   }
   
+  .newsletter-col{
+    min-width: 400px;
+  }
+
   .row-newsletter{
     margin: 0 auto;
     position: relative;
-    width: 100;
+    align-items: center;
+    justify-content: center;
   }
   
   
@@ -343,11 +512,16 @@
   }
   
   
-   #inputfield {
-    width: 60%; 
-    padding: 10px;
-    border: 1px solid #6B99C3;}
-    
+   .inputfield {
+    width: 65%; 
+    border: 1px solid #6B99C3;
+    max-width: 300px;
+    height: 44px;
+}
+  
+.form-group{
+    justify-content: center;
+}
   
   
  .form-group button {
@@ -356,7 +530,7 @@
     border: none;
     background-color: #16354D;
     color: white;
- } 
+ }  
   
   .image-newsletter{
     max-width: 250px
@@ -365,7 +539,11 @@
 
   /*newsletter end*/
 
-  /*about page*/
+  /*about page- Federico*/
+
+  /* .body-aboutus{
+    max-width: 1360px;
+  } */
 
   #about-title{
     text-align: center;
@@ -388,6 +566,9 @@
     align-items: center;
       
    
+}
+.aboutrow img{
+    object-fit: cover;
 }
 
 .text-about-us{
@@ -491,4 +672,12 @@
    filter: brightness(0) invert(1);
   }
 
-/*reveal content*/
+  #h2principles:hover {
+    
+    font-size: 250%;}
+
+
+#principles-container{
+    display: none;
+}
+

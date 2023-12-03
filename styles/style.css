@@ -21,7 +21,7 @@ div > p {
 .index-h1 {
     margin-top: 15px;
     margin-bottom: 15px;
-    color: #16354D;
+   
 }
 
 /* set carousel wrapper height */
@@ -40,7 +40,7 @@ div > p {
 
 /* set navigation button background colour to white, appears below 576px width */
 .navbar-toggler {
-    background-color: #FFFFFF !important;
+    background-color: #FFFFFF ;
 }
 
 /* set logo dimension and rounded border */
@@ -65,7 +65,7 @@ div > p {
 }
 
 /* set heading text colour to prussian blue */
-h3.rpsGame {
+.rpsGame {
     color: #16354D;
 }
 
@@ -74,13 +74,13 @@ h3.rpsGame {
 .site-footer, 
 .car-service-checklist, 
 .btn-primary {
-    background-color: #16354D !important;
+    background-color: #16354D ;
 }
 
 /* set navbar links text colour to white and font to bold, added imporant rule to override bootstrap preset styling*/
 .nav-link {
     color: #FFFFFF !important;
-    font-weight: bold !important;
+    font-weight: bold ;
 }
 
 /*Utilised CSS filter generator and applied filter properties to image class to change icons colour to prussian blue */
@@ -101,7 +101,7 @@ h3.rpsGame {
 }
 
 .custom-shadow {
-    box-shadow: 0px 4px 8px #E4E5EA;
+    box-shadow: 0 4px 8px #E4E5EA;
 }
 /* set hover effects, text colour to prussian blue, font to bold, background colour to darkorange and transform to increase size of the element*/
 .call-button:hover, 
@@ -110,9 +110,9 @@ h3.rpsGame {
 .submit-btn:hover, 
 .btn-primary:hover, 
 #submitbutton:hover {
-    color: #16354D !important;
+    color: #16354D ;
     font-weight: bold;
-    background-color: darkorange !important;
+    background-color: darkorange !important ;
     transform: scale(1.05);
 } 
 
@@ -125,35 +125,35 @@ h3.rpsGame {
 
 /* set accordion collapsed buttons' background colour to prussian blue and text colour to white*/
 .accordion-button:not(.collapsed), #submitbutton{
-    background-color: #16354D !important;
-    color: #FFFFFF !important;
+    background-color: #16354D ;
+    color: #FFFFFF ;
 }
 
 /* set accordion hover effect on none collapsed buttons' background colour to prussian blue and text colour to white*/
 .accordion-button:hover {
-    background-color: #16354D !important;
-    color: #FFFFFF !important;
+    background-color: #16354D ;
+    color: #FFFFFF ;
 }
 
 /* set mini game bootstrap buttons width dimension */
-button#rock, 
-button#paper, 
-button#scissors {
+#rock, 
+#paper, 
+#scissors {
     width: 90px;
 }
 
 /* set navbar links hover effects text colour to prussian blue, font to bold, background colour to darkorange and transform to increase size of the element*/
 .nav-link:hover, 
 .dropdown-item:hover {
-    color: #16354D !important;
+    color: #16354D ;
     font-weight: bold;
-    background-color: darkorange !important;
+    background-color: darkorange;
     transform: scale(1.02);
 }
 
 /* set accordion text with Google Fonts */
 .accordion-text-carservice strong{
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'Lato', sans-serif;
 }
 
 /* set background settings, image pathing, padding and margins */
@@ -187,8 +187,9 @@ button#scissors {
     }
     
     .custom {
-        width: 150px !important;
+        width: 150px;
     }
+
     .testimonial-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -203,17 +204,7 @@ button#scissors {
 
     }
 
-    .textBody h1{
-        font-size: 35px;
-    }
      
-   
-   
-    .textBody h3{
-        font-size: 20px;
-        font-weight: bold;
-    }
-
   
      
     /* This class is defining the styling for the container element that holds each
@@ -278,11 +269,7 @@ button#scissors {
         width:fit-content;
     }   
 
-    .checking-test h6{
-        justify-content: center;
-        text-align: center;
-        
-    }
+ 
 
     #startBrakeCheckImage{
         max-width: 70px;
@@ -298,17 +285,12 @@ button#scissors {
        
     }
      
-    /* This media query in CSS that targets screens with a maximum width of 600 pixels. */
-    @media screen and (max-width: 600px) {
-        .testimonial-grid {
-            grid-template-columns: 1fr;
-        }
-    }
+
 
 /*changing style of the banner bootstrap buttons*/
 .color-buttons-banner{
-    background-color: #16354D !important;
-    color: #ffffff !important;
+    background-color: #16354D ;
+    color: #ffffff ;
 }
 /* .color-buttons-banner{
     background-color: #6B99C3!important;
@@ -339,7 +321,7 @@ button#scissors {
         width: 100%;
         font: inherit;
         padding: 1.30rem;
-        font-weight: 350;
+        font-weight: 300;
     }
     
     .headerContact {
@@ -397,12 +379,10 @@ button#scissors {
 
 /* Styling of the Radio and checkBox validation */
 .wrapper-class input[type="radio"] {
-    width: 15px;
     display: inline;
     
   } /* Format the checkbox */
 .wrapper-class input[type="checkbox"] {
-    width: 15px;
     display: inline;
     text-align: justify;
   }
@@ -534,7 +514,8 @@ button#scissors {
  }  
   
   .image-newsletter{
-    max-width: 250px
+    max-width: 250px;
+    object-fit: contain;
     
   }
 
@@ -648,7 +629,7 @@ button#scissors {
 
   
 /*Styling of the cards */
-.thefront h2, .theback h2{
+.h2-frontback{
     font-family: 'Lato', sans-serif;
     padding: 10px;
     font-weight: bold;

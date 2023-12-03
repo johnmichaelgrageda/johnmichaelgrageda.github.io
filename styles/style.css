@@ -7,19 +7,22 @@ body, html{
     
 }
 
-h1, h4{
-    color: #16354D;
-}
-
-/* this targets all p elements within a div and set colour to blue gray*/
-div > p, li, i {
-    color: #000000 !important;
-}
-
-.aboutrow h2, h2#h2principles{
+/* set h1 and h4 headings text colour to prussian blue */
+h1, h4, .aboutrow h2, h2#h2principles, h2.text-center, .accordion-text-carservice h2 {
     color: #16354D !important;
 }
 
+/* this targets all p elements within a div and set colour to blue gray*/
+div > p, li, i, form.news-form {
+    color: #000000 !important;
+}
+
+/* set h2 headings text colour to white */
+#h2checklist-1,
+#h2checklist-2,
+#h2checklist-3 {
+    color: #FFFFFF !important;
+}
 /* -----John Michael Grageda Start----- */
 /* set index h1 heading margins and text colour to prussian blue */
 .index-h1 {
@@ -106,6 +109,7 @@ h3.rpsGame {
 /* set h6 heading margin */
 .icon-header {
     margin-top: 10px;
+    color: #16354D;
 }
 
 .custom-shadow {
@@ -135,6 +139,9 @@ h3.rpsGame {
 .accordion-button:not(.collapsed), #submitbutton{
     background-color: #16354D !important;
     color: #FFFFFF !important;
+}
+.accordion-button.collapsed{
+    color: #16354D;
 }
 
 /* set accordion hover effect on none collapsed buttons' background colour to prussian blue and text colour to white*/

@@ -304,6 +304,7 @@ button#scissors {
             grid-template-columns: 1fr;
         }
     }
+
 /*changing style of the banner bootstrap buttons*/
 .color-buttons-banner{
     background-color: #16354D !important;

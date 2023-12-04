@@ -19,6 +19,7 @@ div > p {
 
 
 
+
 /* -----John Michael Grageda Start----- */
 /* set index h1 heading margins and text colour to prussian blue */
 .index-h1 {
@@ -128,8 +129,8 @@ div > p {
 
 /* set accordion collapsed buttons' background colour to prussian blue and text colour to white*/
 .accordion-button:not(.collapsed), #submitbutton{
-    background-color: #16354D ;
-    color: #FFFFFF ;
+    background-color: #16354D !important ;
+    color: #FFFFFF !important;
 }
 
 /* set accordion hover effect on none collapsed buttons' background colour to prussian blue and text colour to white*/
@@ -137,6 +138,18 @@ div > p {
     background-color: #16354D ;
     color: #FFFFFF ;
 }
+
+.accordion-button{
+    color: #16354D;
+}
+/* .accordion-button.collapsed{ color: #16354D !important;} */
+
+.icon-header { margin-top: 10px; color: #16354D; }
+
+h1, h4, .aboutrow h2, h2#h2principles, h2.text-center, .accordion-text-carservice h2 { color: #16354D !important; }
+
+#h2checklist-1, #h2checklist-2, #h2checklist-3 { color: #FFFFFF !important; }
+
 
 /* set mini game bootstrap buttons width dimension */
 #rock, 
@@ -156,11 +169,11 @@ div > p {
 
 /* set accordion text with Google Fonts */
 .accordion-text-carservice strong{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif !important;
 }
 
 /* set background settings, image pathing, padding and margins */
-#bg-clutch {background-image:url(../images/clutch-banner-bg.jpg); /*https://www.freepik.com/free-photo/female-mechanic-holding-spare-parts-car_1005668.htm#query=clutch%20repair&position=0&from_view=keyword&track=ais&uuid=19caf867-0d9a-4bfc-ab37-53942c0bdbd3*/
+#bg-clutch {background-image:url(/images/clutch-banner-bg.jpg); /*https://www.freepik.com/free-photo/female-mechanic-holding-spare-parts-car_1005668.htm#query=clutch%20repair&position=0&from_view=keyword&track=ais&uuid=19caf867-0d9a-4bfc-ab37-53942c0bdbd3*/
     padding: 50px;
     margin-top: 20px;
     margin-bottom: 8px;
@@ -189,6 +202,9 @@ div > p {
     
     }
     
+    .list-brakes{
+        color: #000000;
+    }
     .custom {
         width: 150px;
     }
@@ -466,6 +482,9 @@ div > p {
     background-color: rgba(0, 0, 0, 0.5);
   }
   
+  .newsletter-text{
+    color: black;
+  }
   .newsletter-bg {
     
     margin: 100px auto;
@@ -530,9 +549,15 @@ div > p {
     max-width: 1360px;
   } */
 
+.abouth2{
+    color: #000000;
+}
+
   #about-title{
     text-align: center;
     padding-bottom: 30px;
+    color: black;
+
 
   }  
 

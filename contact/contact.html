@@ -14,6 +14,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="../styles/style.css">
+
   <!--Google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,25 +24,30 @@
 </head>
 
 <body>
-<!--Header-->
-<!-- Bootstrap 5 Navbar -->
-<!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
-<header>
-  <nav class="navbar navbar-expand-sm mb-3">
-    <div class="container-fluid">
-      <!--Logo-->
-      <a class="navbar-brand" href="../index.html"> <img src="../images/headerlogo.jpg" alt="Company Logo"></a> 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active rounded-3" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link rounded-3" href="../about/about.html">About</a>
-          </li>
+  <!--Header-->
+
+  <!--Bootstrap 5 Navbar-->
+
+  <!--https://getbootstrap.com/docs/5.3/components/navbar/-->
+
+  <header>
+    <nav class="navbar navbar-expand-sm mb-3">
+      <div class="container-fluid">
+        <!--Logo-->
+        <a class="navbar-brand" href="../index.html"> <img src="../images/headerlogo.jpg" alt="Company Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active rounded-3" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link rounded-3" href="../about/about.html">About</a>
+            </li>
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle rounded-3" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -58,6 +64,7 @@
                 <li class="nav-item">
                   <a class="nav-link rounded-3" href="#">Contact Us</a>
                 </li>
+           
           </ul>
         </div>
       </div>
@@ -65,8 +72,8 @@
   </header>
   <!-- Claudemar Contact us page -->
   <!-- carousel -->
-<div class="container ">
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="container">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="../images/wheel.jpg" class="d-block w-100" alt="whell">
@@ -93,13 +100,14 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+    </div>
+  </div>
 
-</div>
-    <!-- CLAUDEMAR -->
-        <!-- FORM -->
+    <br><!-- CLAUDEMAR -->
+    <!-- FORM -->
     <div class="container text-center">
-      <div class="row mt-5 custom-shadow">
-        <div class="col-md-6 mb-3">
+      <div class="row">
+        <div class="col-md-6">
           <h3 class="headerContact">Contact us</h3>
           <form name="myForm" id="myForm" onsubmit="openPopup();">
             <!-- NAME -->
@@ -130,41 +138,39 @@
           </div>
         </div>
         <!-- openning times -->
-        <div class="col-md-6 mt-4 mb-3">
-          <p>
-            <h2 class="headerContact">Opening Times 🚙</h2>
-          </p>
-          <p>
-            <h6 class="headerContact">Monday - Friday: 8:00 AM - 5:00 PM 
-            </p>
-          <p>
-            <h6>Saturday - Sunday: Closed</h6>
-          </p>
-          <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.682897520172!2d-6.245567723962382!3d53.34893237453089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2sFaculdade%20Nacional%20da%20Irlanda!5e0!3m2!1spt-BR!2sie!4v1701274946923!5m2!1spt-BR!2sie" width="500" height="400" style="border:0; align-items: center;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+        <div class="col-md-6" style="padding-top: 60px">
+          <h2 class="headerContact">Opening time 🚙</h2><br>
+          <h6 class="headerContact">Monday - Friday: 8:00 AM - 5:00 PM <br>
+            Saturday - Sunday: Closed</h6>
+          <br><br>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.682897520172!2d-6.245567723962382!3d53.34893237453089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2sFaculdade%20Nacional%20da%20Irlanda!5e0!3m2!1spt-BR!2sie!4v1701274946923!5m2!1spt-BR!2sie"
+            width="500" height="400" style="border:0; align-items: center;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-    </div>
-  </div>
-    <!-- Footer -->
-  <footer class="site-footer text-center text-white mt-5">
-    <div class="container p-1">
-      <div class="mb-4">
-        <h6 class="mt-4">
-          CJF Mechanics - The only mechanics you'll need.
-        </h6>
-          <!--Copyright-->
-        <h6> 
-          <span id="copy_ele">&#169;</span>  2023 Copyright CJF Mechanics
-        </h6>
+      <div class="container text-center">
       </div>
+      <div class="contai"></div>
     </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="site-footer text-center text-white mt-5">
+      <div class="container p-1">
+        <div class="mb-4">
+          <p class="mt-4">
+            CJF Mechanics - The only mechanics you'll need.
+          </p>
+          <!-- Copyright -->
+          <p>
+            <span id="copy_ele">&#169;</span> 2023 Copyright CJF Mechanics
+          </p>
+        </div>
+      </div>
+    </footer>
     <!-- Scripts -->
     <script src="../scripts/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>    
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
 </body>
 </html>

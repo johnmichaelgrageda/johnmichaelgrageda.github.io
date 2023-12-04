@@ -12,10 +12,12 @@ h1{
     color: #16354D;
 }
 
-/* This will target all p tags within a div
+/* This will target all p tags within a div*/
 div > p {
     color: #000000;
-} */
+} 
+
+
 
 /* -----John Michael Grageda Start----- */
 /* set index h1 heading margins and text colour to prussian blue */
@@ -113,7 +115,7 @@ div > p {
 #submitbutton:hover {
     color: #16354D ;
     font-weight: bold;
-    background-color: darkorange !important ;
+    background-color: #ff8c00 !important ;
     transform: scale(1.05);
 } 
 
@@ -146,9 +148,9 @@ div > p {
 /* set navbar links hover effects text colour to prussian blue, font to bold, background colour to darkorange and transform to increase size of the element*/
 .nav-link:hover, 
 .dropdown-item:hover {
-    color: #16354D ;
+    color: #16354D !important;
     font-weight: bold;
-    background-color: darkorange;
+    background-color: darkorange ;
     transform: scale(1.02);
 }
 
